@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="de" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>v4nox (@dome_hahn) — AI Jukebox | ChatGPT Lyrics &amp; Suno V6 Music</title>
+  <meta name="description" content="Offizielle Artist-Seite von v4nox (@dome_hahn). Alle 20 Original-Songs vollständig KI-generiert mit ChatGPT (Lyrics & Style) und Suno V6 Audio-Synthese." />
+  <meta name="theme-color" content="#000000" />
+  <meta property="og:title" content="v4nox (@dome_hahn) — AI Music Jukebox" />
+  <meta property="og:description" content="Höre alle 20 echten Suno-Songs von @dome_hahn direkt in der interaktiven Jukebox – inklusive der kompletten ChatGPT-Lyrics und Style-Prompts." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://v4nox.eu" />
+  <meta property="og:image" content="/assets/hero-orb.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <!-- Ambient Background Canvas -->
+  <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- Apple-Style Sticky Global Navigation -->
+  <header class="global-nav" id="global-nav">
+    <div class="nav-container">
+      <a href="#top" class="brand-logo" aria-label="v4nox Startseite">
+        <div class="brand-emblem-wrap">
+          <img src="/favicon.svg" alt="v4nox Logo" class="brand-emblem-svg" width="36" height="36" />
+          <span class="brand-emblem-glow"></span>
+        </div>
+        <div class="brand-wordmark">
+          <div class="brand-title-row">
+            <span class="brand-v">V</span><span class="brand-4">4</span><span class="brand-nox">noX</span>
+            <span class="brand-eq-mini" aria-hidden="true">
+              <i></i><i></i><i></i><i></i>
+            </span>
+          </div>
+          <span class="brand-sub-tag">AI SOUND ARCHITECTURE • @DOME_HAHN</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Hauptnavigation">
+        <a href="#vision" class="nav-link">Vision</a>
+        <a href="#jukebox" class="nav-link">AI Jukebox (Alle 210 Songs)</a>
+        <a href="#studio" class="nav-link">ChatGPT × Suno Studio</a>
+        <a href="#architecture" class="nav-link">Architektur</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://suno.com/@dome_hahn" target="_blank" rel="noopener noreferrer" class="btn-pill btn-pill-primary">
+          <span>@dome_hahn auf Suno</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- SECTION 1: HERO (Apple Mac Keynote Style) -->
+    <section class="hero-section" id="vision">
+      <div class="hero-sticky-stage">
+        <div class="hero-badge-row reveal-up">
+          <span class="status-pill">
+            <span class="pulse-dot"></span>
+            100% KI-GENERIERT • CHATGPT LYRICS &amp; STYLE × SUNO V6
+          </span>
+        </div>
+
+        <h1 class="hero-headline reveal-up">
+          <span class="hero-overline">v4nox • @dome_hahn</span>
+          <span class="gradient-text">Jeder Text. Jeder Beat. Reine KI.</span>
+        </h1>
+
+        <p class="hero-subline reveal-up">
+          Willkommen im Klangkosmos von <strong>Dominik Hahn (@dome_hahn)</strong>. Alle <strong>210 Songs</strong> auf dieser Seite sind echte Releases von meinem Suno-Profil – komplett inklusive Songtexten, dramaturgischer Struktur und Style-Prompts durch <strong>ChatGPT</strong> entworfen und mit <strong>Suno AI</strong> vertont.
+        </p>
+
+        <div class="hero-cta-group reveal-up">
+          <a href="#jukebox" class="btn-apple-lg btn-apple-glow" id="hero-jukebox-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            <span>Jukebox starten (Alle 210 Original-Songs)</span>
+          </a>
+          <a href="https://suno.com/@dome_hahn" target="_blank" rel="noopener noreferrer" class="btn-apple-lg btn-apple-glass">
+            <span>Offizielles Suno-Profil (@dome_hahn)</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Central 3D Orb & Floating Apple UI HUD Frames -->
+        <div class="hero-visual-wrapper" id="hero-visual-wrapper">
+          <div class="orb-glow-backdrop"></div>
+          <div class="orb-container" id="hero-orb-container">
+            <img src="/assets/hero-orb.png" alt="v4nox Neural Sound Core" class="hero-orb-img" />
+            <div class="orb-ring orb-ring-1"></div>
+            <div class="orb-ring orb-ring-2"></div>
+          </div>
+
+          <!-- Floating UI Frame Left (Parallax on Scroll) -->
+          <div class="floating-hud hud-left" data-parallax="-0.18">
+            <div class="hud-header">
+              <span class="hud-dot cyan"></span>
+              <span class="hud-title">CHATGPT LYRICS &amp; STYLE</span>
+            </div>
+            <div class="hud-metric">100% AI Written</div>
+            <div class="hud-sub">Texte, Metatags &amp; Arrangement</div>
+            <div class="hud-mini-bars">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+
+          <!-- Floating UI Frame Right (Parallax on Scroll) -->
+          <div class="floating-hud hud-right" data-parallax="0.22">
+            <div class="hud-header">
+              <span class="hud-dot violet"></span>
+              <span class="hud-title">SUNO KATALOG</span>
+            </div>
+            <div class="hud-code">210 Echte Releases • @dome_hahn</div>
+            <div class="hud-sub">84 DE • 75 ES • 51 EN Tracks</div>
+          </div>
+        </div>
+
+        <div class="scroll-indicator">
+          <span>Scrollen zur interaktiven Jukebox</span>
+          <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: DIE INTERAKTIVE v4nox AI JUKEBOX (All 210 Real Songs + ChatGPT Lyrics & Style Inspector) -->
+    <section class="jukebox-section" id="jukebox">
+      <div class="container">
+        <div class="section-intro">
+          <p class="eyebrow reveal-up">KOMPLETTER KATALOG VON @DOME_HAHN (210 SONGS)</p>
+          <h2 class="display-title reveal-up">Die v4nox AI-Jukebox.</h2>
+          <p class="section-lead reveal-up">
+            Wähle aus allen <strong>210 veröffentlichten Original-Songs</strong> von <a href="https://suno.com/@dome_hahn" target="_blank" rel="noopener noreferrer" class="inline-accent-link">suno.com/@dome_hahn</a>. Du hörst den echten Suno-Stream und kannst parallel den kompletten von <strong>ChatGPT generierten Songtext</strong> sowie den exakten <strong>ChatGPT Style-Prompt &amp; die Suno-Einstellungen</strong> jedes einzelnen Liedes einsehen.
+          </p>
+        </div>
+
+        <!-- Jukebox UI Frame (Apple Pro App Deck) -->
+        <div class="jukebox-frame reveal-up">
+          <!-- Jukebox Top Window Bar -->
+          <div class="mac-titlebar">
+            <div class="mac-traffic-lights">
+              <span class="light red"></span>
+              <span class="light yellow"></span>
+              <span class="light green"></span>
+            </div>
+            <div class="mac-window-title">
+              <span>v4nox Jukebox Pro — Alle 210 Original-Tracks (@dome_hahn)</span>
+            </div>
+            <div class="mac-window-badge" id="jukebox-status-badge">SUNO DIRECT STREAM</div>
+          </div>
+
+          <!-- Jukebox Main Grid -->
+          <div class="jukebox-body">
+            <!-- LEFT: Filterable 210-Song Tracklist -->
+            <div class="jukebox-playlist-col">
+              <div class="jukebox-toolbar">
+                <div class="jukebox-search-wrap">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                  <input type="search" id="jukebox-search" placeholder="Unter 210 Songs nach Titel, Text, Style oder BPM suchen..." aria-label="Songs durchsuchen" />
+                </div>
+                <div class="jukebox-lang-filters" role="group" aria-label="Nach Sprache filtern">
+                  <button type="button" class="filter-chip active" data-lang-filter="ALL">Alle (210)</button>
+                  <button type="button" class="filter-chip" data-lang-filter="DE">DE 🇩🇪 (84)</button>
+                  <button type="button" class="filter-chip" data-lang-filter="ES">ES 🇪🇸 (75)</button>
+                  <button type="button" class="filter-chip" data-lang-filter="EN">EN 🇬🇧 (51)</button>
+                </div>
+              </div>
+
+              <div class="jukebox-tracklist" id="jukebox-tracklist" role="listbox" aria-label="Liederauswahl">
+                <!-- Populated dynamically with all 20 real tracks -->
+              </div>
+            </div>
+
+            <!-- RIGHT: Active Song Deck + ChatGPT Lyrics & Style Inspector -->
+            <div class="jukebox-inspector-col">
+              <!-- Active Track Header Card -->
+              <div class="jukebox-now-card">
+                <div class="jn-cover-wrap">
+                  <img src="https://cdn2.suno.ai/image_large_9801a0ec-9079-461f-aa11-36e46a8bf7d2.jpeg" alt="Aktuelles Cover" id="jb-active-cover" />
+                  <button type="button" class="jn-play-trigger" id="jb-cover-play-btn" aria-label="Abspielen oder Pausieren">
+                    <span class="play-circle">
+                      <svg id="jb-cover-icon-play" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                      <svg id="jb-cover-icon-pause" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+                    </span>
+                  </button>
+                </div>
+
+                <div class="jn-meta">
+                  <div class="jn-badges">
+                    <span class="jn-pill cyan" id="jb-active-num">#01</span>
+                    <span class="jn-pill" id="jb-active-bpm">130 BPM</span>
+                    <span class="jn-pill" id="jb-active-dur">3:51</span>
+                    <span class="jn-pill violet" id="jb-active-model">Suno V6</span>
+                  </div>
+                  <h3 class="jn-title" id="jb-active-title">NACHT AUF ANSCHLAG</h3>
+                  <p class="jn-style-short" id="jb-active-short-style">130 BPM • explosive German party rap</p>
+
+                  <div class="jn-action-row">
+                    <button type="button" class="btn-pill btn-pill-primary" id="jb-main-play-btn">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                      <span id="jb-main-play-label">Jetzt in Jukebox abspielen</span>
+                    </button>
+                    <a href="https://suno.com/song/9801a0ec-9079-461f-aa11-36e46a8bf7d2" target="_blank" rel="noopener noreferrer" class="btn-pill btn-pill-glass" id="jb-suno-song-link">
+                      <span>Direkt auf Suno öffnen</span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Inspector Tabs: ChatGPT Lyrics vs. ChatGPT Style Prompt -->
+              <div class="jukebox-tabs-bar">
+                <button type="button" class="jb-tab active" data-jb-tab="lyrics">
+                  <span>ChatGPT Songtext &amp; Regie-Tags</span>
+                </button>
+                <button type="button" class="jb-tab" data-jb-tab="style">
+                  <span>ChatGPT Style-Prompt &amp; KI-Details</span>
+                </button>
+              </div>
+
+              <!-- Tab Content 1: Full ChatGPT Lyrics -->
+              <div class="jb-tab-pane active" id="jb-pane-lyrics">
+                <div class="jb-pane-header">
+                  <span>VOLLSTÄNDIGER CHATGPT SONGTEXT (INKL. METATAGS)</span>
+                  <span class="ai-tag-badge">GENERATED BY CHATGPT</span>
+                </div>
+                <pre class="jb-lyrics-scroll" id="jb-active-lyrics"></pre>
+              </div>
+
+                <!-- Tab Content 2: Full ChatGPT Style Prompt & Suno V6 Settings -->
+              <div class="jb-tab-pane" id="jb-pane-style">
+                <div class="jb-pane-header">
+                  <span>CHATGPT STYLE-PROMPT &amp; SUNO V6 EINSTELLUNGEN</span>
+                  <span class="ai-tag-badge">STYLE &amp; SLIDERS</span>
+                </div>
+                <div class="jb-style-content">
+                  <div class="style-block">
+                    <span class="sb-label">POSITIVE STYLE PROMPT (CHATGPT → SUNO)</span>
+                    <p class="sb-text" id="jb-active-style-prompt"></p>
+                  </div>
+                  <div class="style-block">
+                    <span class="sb-label">NEGATIVE TAGS (AUSGESCHLOSSENE ELEMENTE)</span>
+                    <p class="sb-text muted" id="jb-active-negative-tags"></p>
+                  </div>
+                  <div class="style-block">
+                    <span class="sb-label">SUNO V6 ENGINE &amp; CONTROL SLIDERS (DIESER SONG)</span>
+                    <div class="jb-settings-grid" id="jb-active-settings-grid"></div>
+                  </div>
+                  <div class="style-block">
+                    <span class="sb-label">DIREKTER SUNO SONG-LINK</span>
+                    <p class="sb-text"><a href="https://suno.com/@dome_hahn" target="_blank" rel="noopener noreferrer" id="jb-active-url-text" class="inline-accent-link"></a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Direct Suno Links Directory for all 210 Songs -->
+        <div class="all-suno-links-box reveal-up">
+          <div class="all-suno-links-header">
+            <div>
+              <span class="eyebrow" style="display:block; margin-bottom:4px;">ALLE 210 SUNO DIREKTLINKS</span>
+              <h3>Direkt zu jedem einzelnen deiner 210 Songs auf suno.com/@dome_hahn</h3>
+            </div>
+            <a href="https://suno.com/@dome_hahn" target="_blank" rel="noopener noreferrer" class="btn-pill btn-pill-glass">
+              <span>Komplettes @dome_hahn Profil</span>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+          </div>
+          <div class="all-suno-links-grid" id="all-suno-links-grid">
+            <!-- Populated dynamically with all 210 Suno song links -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: STICKY SCROLLYTELLING STUDIO UI FRAME (Like apple.com/de/mac/) -->
+    <section class="scrolly-section" id="studio">
+      <div class="section-intro container">
+        <p class="eyebrow reveal-up">CHATGPT × SUNO V6 STUDIO</p>
+        <h2 class="display-title reveal-up">Echte Prompts, Styles &amp; Einstellungen für alle 210 Songs.</h2>
+        <p class="section-lead reveal-up">
+          Wähle direkt im Studio-Fenster (oder oben in der Jukebox) eines deiner <strong>210 Lieder</strong> aus. Während du scrollst, zeigt das macOS-Studio-Interface die <strong>originalen ChatGPT-Regieanweisungen</strong>, die <strong>exakten Style- &amp; Negative-Prompts</strong> sowie die <strong>Suno-Einstellungen (Control Sliders, Max Mode, Vox Render Mode)</strong> des gewählten Songs.
+        </p>
+      </div>
+
+      <div class="scrolly-Workspace container">
+        <!-- Sticky macOS / Pro Audio Hardware UI Frame -->
+        <div class="sticky-ui-column">
+          <div class="mac-window-frame" id="studio-ui-frame" data-active-stage="0">
+            <!-- Window Titlebar -->
+            <div class="mac-titlebar">
+              <div class="mac-traffic-lights">
+                <span class="light red"></span>
+                <span class="light yellow"></span>
+                <span class="light green"></span>
+              </div>
+              <div class="mac-window-title">
+                <span>v4nox Studio Inspector —</span>
+                <select id="studio-song-select" class="studio-song-select" aria-label="Song für Studio-Inspektor wählen"></select>
+              </div>
+              <div class="mac-window-badge" id="ui-stage-pill">STAGE 01 // CHATGPT LYRICS</div>
+            </div>
+
+            <!-- Window Body -->
+            <div class="mac-window-body">
+              <!-- Sidebar -->
+              <aside class="studio-sidebar">
+                <div class="sidebar-group-title">INSPEKTOR-ANSICHT</div>
+                <button type="button" class="sidebar-item active" data-stage-indicator="0">
+                  <span class="s-dot"></span>
+                  <span>01. Lyrics &amp; Cues</span>
+                </button>
+                <button type="button" class="sidebar-item" data-stage-indicator="1">
+                  <span class="s-dot"></span>
+                  <span>02. Style &amp; Negative</span>
+                </button>
+                <button type="button" class="sidebar-item" data-stage-indicator="2">
+                  <span class="s-dot"></span>
+                  <span>03. Suno Settings</span>
+                </button>
+
+                <div class="sidebar-group-title" style="margin-top: 1.25rem;">GEWÄHLTER TRACK</div>
+                <div class="sidebar-track-card">
+                  <img src="https://cdn2.suno.ai/image_9801a0ec-9079-461f-aa11-36e46a8bf7d2.jpeg" alt="Cover" id="studio-active-cover" />
+                  <div style="min-width:0;">
+                    <div class="st-title" id="studio-active-title">NACHT AUF ANSCHLAG</div>
+                    <div class="st-sub" id="studio-active-meta">130 BPM • DE</div>
+                  </div>
+                </div>
+
+                <button type="button" class="btn-studio-sidebar-play" id="studio-sidebar-play-btn">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  <span id="studio-sidebar-play-label">Track abspielen</span>
+                </button>
+              </aside>
+
+              <!-- Dynamic Stage Viewport inside the UI Frame -->
+              <div class="studio-viewport">
+                <!-- STAGE 0: Real ChatGPT Lyrics & Structure Cues for Selected Track -->
+                <div class="studio-layer active" data-ui-layer="0">
+                  <div class="layer-top-bar">
+                    <span class="layer-tag">01 // ORIGINAL CHATGPT REGIE-TAGS &amp; SONGTEXT</span>
+                    <span class="layer-status" id="studio-s0-badge">SPRACHE: DE</span>
+                  </div>
+                  <div class="studio-cue-chips" id="studio-s0-cues">
+                    <!-- Dynamic structure cues from track.structureCues -->
+                  </div>
+                  <pre class="studio-lyrics-preview" id="studio-s0-lyrics"></pre>
+                </div>
+
+                <!-- STAGE 1: Real ChatGPT Style Prompt & Negative Tags for Selected Track -->
+                <div class="studio-layer" data-ui-layer="1">
+                  <div class="layer-top-bar">
+                    <span class="layer-tag">02 // ORIGINAL CHATGPT STYLE-PROMPT &amp; NEGATIVE TAGS</span>
+                    <span class="layer-status cyan-glow" id="studio-s1-display-tags">party rap, dance-pop, EDM</span>
+                  </div>
+                  <div class="studio-prompt-card">
+                    <span class="spc-label">POSITIVE STYLE PROMPT (CHATGPT → SUNO V6)</span>
+                    <p class="spc-body" id="studio-s1-positive"></p>
+                  </div>
+                  <div class="studio-prompt-card negative">
+                    <span class="spc-label">NEGATIVE TAGS (AUSGESCHLOSSENE STILE)</span>
+                    <p class="spc-body" id="studio-s1-negative"></p>
+                  </div>
+                </div>
+
+                <!-- STAGE 2: Real Suno V6 Engine Settings & Control Sliders for Selected Track -->
+                <div class="studio-layer" data-ui-layer="2">
+                  <div class="layer-top-bar">
+                    <span class="layer-tag">03 // ECHTE SUNO V6 PARAMETER &amp; CONTROL SLIDERS</span>
+                    <span class="layer-status green-glow" id="studio-s2-model-tag">V6 • CHIRP-HAWK</span>
+                  </div>
+
+                  <div class="studio-settings-grid" id="studio-s2-settings-grid">
+                    <!-- Populated dynamically with exact per-track Suno settings -->
+                  </div>
+
+                  <div class="master-showcase" style="margin-top: 12px;">
+                    <div class="master-disc-wrap">
+                      <img src="https://cdn2.suno.ai/image_9801a0ec-9079-461f-aa11-36e46a8bf7d2.jpeg" alt="Master Release" class="master-cover-spin" id="studio-spin-cover" />
+                    </div>
+                    <div class="master-stats">
+                      <h4 id="studio-s2-title">NACHT AUF ANSCHLAG</h4>
+                      <p id="studio-s2-sub">Veröffentlicht auf suno.com/@dome_hahn</p>
+                      <div class="master-badges" id="studio-s2-badges"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Live Visualizer inside Studio -->
+                <div class="studio-live-meter">
+                  <div class="meter-header">
+                    <span>REALTIME AUDIO SPECTRUM</span>
+                    <span id="studio-audio-state">BEREIT — WÄHLE ODER STARTE EINEN SONG</span>
+                  </div>
+                  <canvas id="studio-visualizer-canvas" width="680" height="90"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scrolling Narrative Steps -->
+        <div class="scrolly-steps-column" id="scrolly-steps-container">
+          <!-- Populated dynamically from WORKFLOW_STEPS in main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: APPLE-STYLE BENTO GRID -->
+    <section class="bento-section" id="architecture">
+      <div class="container">
+        <div class="section-intro">
+          <p class="eyebrow reveal-up">PROFIL &amp; INFRASTRUKTUR</p>
+          <h2 class="display-title reveal-up">Echte KI-Kunst. Bereit für v4nox.eu.</h2>
+        </div>
+
+        <div class="bento-grid">
+          <article class="bento-card bento-span-8 reveal-up">
+            <div class="bento-content">
+              <span class="bento-tag">OFFIZIELLER KANAL</span>
+              <h3>suno.com/@dome_hahn</h3>
+              <p>
+                Von explosivem deutschem Party-Rap (<em>NACHT AUF ANSCHLAG</em>) über spanischen Electro-Reggaeton (<em>CLAVE DE FUEGO</em>, <em>NEÓN EN LA PIEL</em>, <em>VUELTA MAGNÉTICA</em>) bis zu sommerlichem Tropical Afro Club House (<em>BLOOM AFTER DARK</em>, <em>TANGERINE RADIO</em>): Folge <strong>@dome_hahn</strong> direkt auf Suno.
+              </p>
+              <div class="bento-actions">
+                <a href="https://suno.com/@dome_hahn" target="_blank" rel="noopener noreferrer" class="btn-apple-lg btn-apple-glow">
+                  <span>Zum Suno-Profil (@dome_hahn)</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="bento-visual-profile">
+              <div class="profile-glass-card">
+                <div class="pg-avatar">
+                  <img src="https://cdn2.suno.ai/image_9801a0ec-9079-461f-aa11-36e46a8bf7d2.jpeg" alt="v4nox Avatar" />
+                  <span class="pg-verified" title="Verified Creator">✓</span>
+                </div>
+                <div class="pg-info">
+                  <div class="pg-name">v4nox (Dominik Hahn)</div>
+                  <div class="pg-handle">@dome_hahn</div>
+                  <div class="pg-bio">ChatGPT Prompt &amp; Lyric Engineering • Suno V6 Creator</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="bento-card bento-span-4 reveal-up">
+            <div class="bento-content">
+              <span class="bento-tag">CHATGPT × SUNO V6</span>
+              <h3>Vollständig KI-generiert.</h3>
+              <p>
+                Sowohl die kompletten Songtexte mit allen Regieanweisungen als auch die detaillierten Style-Prompts wurden mit ChatGPT entwickelt und anschließend durch Suno V6 vertont.
+              </p>
+            </div>
+            <div class="bento-metric-big">
+              <span class="bm-value">210 Songs</span>
+              <span class="bm-label">Original-Tracks von @dome_hahn</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER WITH DIRECT LEGAL ACCESS (IMPRESSUM & DATENSCHUTZ) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#top" class="brand-logo" aria-label="v4nox Startseite">
+            <div class="brand-emblem-wrap">
+              <img src="/favicon.svg" alt="v4nox Logo" class="brand-emblem-svg" width="34" height="34" />
+            </div>
+            <div class="brand-wordmark">
+              <div class="brand-title-row">
+                <span class="brand-v">V</span><span class="brand-4">4</span><span class="brand-nox">noX</span>
+              </div>
+              <span class="brand-sub-tag">@DOME_HAHN • V4NOX.EU</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Offizielle Artist-Plattform von Dominik Hahn (@dome_hahn).<br />
+            100% KI-generierte Songs (Lyrics &amp; Style via ChatGPT, Audio via Suno).
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Navigation</h4>
+          <a href="#vision">Start &amp; Vision</a>
+          <a href="#jukebox">AI Jukebox (20 Songs)</a>
+          <a href="#studio">ChatGPT × Suno Workflow</a>
+          <a href="#architecture">Profil &amp; Info</a>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Plattformen</h4>
+          <a href="https://suno.com/@dome_hahn" target="_blank" rel="noopener noreferrer">Suno (@dome_hahn) ↗</a>
+          <a href="https://v4nox.eu">v4nox.eu</a>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Rechtliches (Pflichtangaben)</h4>
+          <button type="button" class="footer-legal-btn" data-modal-open="impressum">Impressum</button>
+          <button type="button" class="footer-legal-btn" data-modal-open="datenschutz">Datenschutzerklärung</button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 v4nox (Dominik Hahn). Alle Rechte vorbehalten. Bereitgestellt über Cloudflare auf v4nox.eu.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PERSISTENT APPLE MUSIC / PRO DOCK PLAYER -->
+  <div class="player-dock" id="player-dock" role="region" aria-label="Audio Player">
+    <div class="dock-inner">
+      <div class="dock-track-info">
+        <img src="https://cdn2.suno.ai/image_9801a0ec-9079-461f-aa11-36e46a8bf7d2.jpeg" alt="Track Cover" class="dock-cover" id="dock-cover" />
+        <div class="dock-meta">
+          <div class="dock-title" id="dock-title">NACHT AUF ANSCHLAG</div>
+          <div class="dock-artist">
+            <span>@dome_hahn</span>
+            <span class="dock-badge" id="dock-bpm">130 BPM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dock-controls-center">
+        <div class="dock-buttons">
+          <button type="button" class="dock-btn" id="dock-prev-btn" aria-label="Vorheriger Track">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="19 20 9 12 19 4 19 20"></polygon><line x1="5" y1="19" x2="5" y2="5" stroke="currentColor" stroke-width="2"></line></svg>
+          </button>
+          <button type="button" class="dock-btn dock-play-main" id="dock-play-btn" aria-label="Abspielen oder Pausieren">
+            <svg id="dock-icon-play" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            <svg id="dock-icon-pause" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+          </button>
+          <button type="button" class="dock-btn" id="dock-next-btn" aria-label="Nächster Track">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 4 15 12 5 20 5 4"></polygon><line x1="19" y1="5" x2="19" y2="19" stroke="currentColor" stroke-width="2"></line></svg>
+          </button>
+        </div>
+
+        <div class="dock-scrubber">
+          <span class="dock-time" id="dock-time-current">0:00</span>
+          <input type="range" min="0" max="100" value="0" class="scrubber-slider" id="dock-scrubber-input" aria-label="Wiedergabeposition" />
+          <span class="dock-time" id="dock-time-total">3:51</span>
+        </div>
+      </div>
+
+      <div class="dock-actions-right">
+        <canvas id="dock-mini-eq" width="60" height="28" aria-hidden="true"></canvas>
+        <a href="https://suno.com/song/9801a0ec-9079-461f-aa11-36e46a8bf7d2" target="_blank" rel="noopener noreferrer" class="btn-dock-suno" id="dock-suno-link">
+          <span>Song auf Suno</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEGAL MODAL: IMPRESSUM & DATENSCHUTZ (DSGVO & DDG § 5 KONFORM) -->
+  <div class="legal-modal-backdrop" id="legal-modal-backdrop" aria-hidden="true">
+    <div class="legal-modal" role="dialog" aria-modal="true" aria-labelledby="legal-modal-title">
+      <div class="legal-modal-header">
+        <div class="legal-tabs">
+          <button type="button" class="legal-tab active" data-legal-tab="impressum">Impressum</button>
+          <button type="button" class="legal-tab" data-legal-tab="datenschutz">Datenschutzerklärung</button>
+        </div>
+        <button type="button" class="legal-close-btn" id="legal-modal-close" aria-label="Schließen">✕</button>
+      </div>
+
+      <div class="legal-modal-body">
+        <!-- TAB 1: IMPRESSUM -->
+        <div class="legal-pane active" id="legal-pane-impressum">
+          <h2 id="legal-modal-title">Impressum</h2>
+
+          <h3>Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz)</h3>
+          <p>
+            <strong>Dominik Hahn</strong><br />
+            Künstlername / Projekt: <strong>v4nox (@dome_hahn)</strong><br />
+            Raiffeisenstraße 4B<br />
+            55491 Büchenbeuren<br />
+            Deutschland
+          </p>
+
+          <h3>Kontakt</h3>
+          <p>
+            E-Mail: <a href="mailto:dhahn@squora.de">dhahn@squora.de</a><br />
+            Suno Artist-Profil: <a href="https://suno.com/@dome_hahn" target="_blank" rel="noopener noreferrer">https://suno.com/@dome_hahn</a><br />
+            Website: <a href="https://v4nox.eu">https://v4nox.eu</a>
+          </p>
+
+          <h3>Redaktionell verantwortlich</h3>
+          <p>
+            Verantwortlich für den journalistisch-redaktionellen Inhalt gemäß § 18 Abs. 2 Medienstaatsvertrag (MStV):<br />
+            <strong>Dominik Hahn</strong><br />
+            Raiffeisenstraße 4B<br />
+            55491 Büchenbeuren<br />
+            Deutschland
+          </p>
+
+          <h3>Hinweis zu KI-generierten Inhalten (ChatGPT &amp; Suno AI) &amp; GEMA-Freiheit</h3>
+          <p>
+            Sämtliche auf dieser Website präsentierten Musikstücke unter dem Künstlernamen <strong>v4nox (@dome_hahn)</strong> wurden vollständig unter Einsatz künstlicher Intelligenz erstellt: Die Songtexte (Lyrics), strukturellen Regieanweisungen und Style-Prompts wurden mithilfe von <em>ChatGPT (OpenAI)</em> generiert; die musikalische Vertonung und Audio-Synthese erfolgte über <em>Suno AI (suno.com)</em>.
+          </p>
+          <p>
+            <strong>Hinweis zur GEMA / Verwertungsgesellschaften:</strong> Alle auf <strong>v4nox.eu</strong> bereitgestellten Musiktitel und Texte sind <strong>GEMA-frei</strong>. Sie sind bei keiner Verwertungsgesellschaft (wie der GEMA) registriert und enthalten keinerlei geschützte Samples oder Fremdkompositionen aus dem GEMA-Repertoire. Die Nutzungs- und Verwertungsrechte richten sich nach den Lizenzbestimmungen von Suno AI bzw. liegen beim Betreiber dieser Website.
+          </p>
+
+          <h3>EU-Streitschlichtung &amp; Verbraucherstreitbeilegung</h3>
+          <p>
+            Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+          </p>
+        </div>
+
+        <!-- TAB 2: DATENSCHUTZERKLÄRUNG -->
+        <div class="legal-pane" id="legal-pane-datenschutz">
+          <h2>Datenschutzerklärung</h2>
+          <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 16px;">Stand: November 2026</p>
+
+          <h3>1. Verantwortlicher</h3>
+          <p>
+            Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) und anderer datenschutzrechtlicher Vorschriften ist:<br /><br />
+            <strong>Dominik Hahn</strong><br />
+            Raiffeisenstraße 4B<br />
+            55491 Büchenbeuren<br />
+            Deutschland<br />
+            E-Mail: <a href="mailto:dhahn@squora.de">dhahn@squora.de</a>
+          </p>
+
+          <h3>2. Allgemeine Hinweise zur Datenverarbeitung</h3>
+          <p>
+            Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Hierzu können insbesondere IP-Adressen, Kommunikationsdaten und technische Nutzungsdaten gehören. Wir verarbeiten personenbezogene Daten nur, soweit dies zur Bereitstellung, Absicherung und Optimierung dieser Website (<strong>v4nox.eu</strong>), zur Bearbeitung von Anfragen oder zur Erfüllung gesetzlicher Pflichten erforderlich ist. Diese Website verwendet keine Analyse- oder Werbe-Tracker.
+          </p>
+
+          <h3>3. Aufruf und Bereitstellung der Website</h3>
+          <p>
+            Beim Aufruf dieser Website werden technisch erforderliche Informationen zwischen Ihrem Endgerät, Ihrem Browser und der eingesetzten Web-Infrastruktur übertragen. Ohne diese Verarbeitung kann die Website nicht an Ihr Endgerät ausgeliefert werden. Dabei können insbesondere folgende Daten verarbeitet werden:
+          </p>
+          <ul>
+            <li>IP-Adresse des zugreifenden Endgeräts,</li>
+            <li>Datum und Uhrzeit des Zugriffs,</li>
+            <li>aufgerufene Adresse beziehungsweise URL,</li>
+            <li>übertragene Datenmenge, HTTP-Methode und HTTP-Statuscode,</li>
+            <li>Referrer-URL, sofern vom Browser übertragen,</li>
+            <li>Browsertyp, Browserversion, Betriebssystem und User-Agent,</li>
+            <li>technische Informationen zur Verbindung, Auslieferung und Absicherung der Website.</li>
+          </ul>
+          <p>
+            Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse besteht in der sicheren, stabilen, performanten und fehlerfreien Bereitstellung unseres Internetangebots.
+          </p>
+
+          <h3>4. Hosting &amp; Domain-Infrastruktur bei STRATO</h3>
+          <p>
+            Unsere Domain (<strong>v4nox.eu</strong>) sowie die zugrundeliegende Hosting- bzw. Server- und E-Mail-Infrastruktur werden über den deutschen Hosting-Dienstleister <strong>STRATO</strong> bereitgestellt. Anbieter ist die:<br /><br />
+            <strong>STRATO GmbH</strong>, Otto-Ostrowski-Straße 7, 10249 Berlin, Deutschland.
+          </p>
+          <p>
+            Wenn Sie unsere Website besuchen oder uns per E-Mail kontaktieren, verarbeitet die STRATO GmbH in unserem Auftrag technisch notwendige Verbindungs-, Inhalts- und Protokolldaten (insbesondere IP-Adressen, Zeitstempel, angefragte Ressourcen sowie Daten und Logfiles im Rahmen der E-Mail-Kommunikation) in ISO-27001-zertifizierten Rechenzentren innerhalb der Europäischen Union / Deutschlands.
+          </p>
+          <p>
+            Rechtsgrundlage für den Einsatz von STRATO ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer zuverlässigen, schnellen und sicheren Bereitstellung unseres Online-Angebots). Wir haben mit der STRATO GmbH eine Vereinbarung zur Auftragsverarbeitung (AVV) gemäß Art. 28 Abs. 3 DSGVO abgeschlossen, durch die sichergestellt ist, dass STRATO (sowie deren vertraglich nach Art. 28 DSGVO gebundene technische Subunternehmer wie u. a. die IONOS SE) personenbezogene Daten ausschließlich nach unseren dokumentierten Weisungen und unter Einhaltung strenger technischer und organisatorischer Maßnahmen gemäß Art. 32 DSGVO verarbeitet. Weitere Informationen zum Datenschutz bei STRATO finden Sie unter <a href="https://www.strato.de/datenschutz/" target="_blank" rel="noopener noreferrer">https://www.strato.de/datenschutz/</a>.
+          </p>
+
+          <h3>5. Content Delivery Network (CDN), Edge-Auslieferung und Sicherheit durch Cloudflare</h3>
+          <p>
+            Zur weltweiten, schnellen Auslieferung und zur Absicherung gegen Angriffe (Reverse-Proxy, Web Application Firewall, DDoS-Schutz) wird diese Website über das Netzwerk von <strong>Cloudflare</strong> ausgeliefert. Anbieter der Cloudflare-Dienste sind insbesondere:<br /><br />
+            <strong>Cloudflare, Inc.</strong>, 101 Townsend Street, San Francisco, California 94107, USA<br />
+            sowie die europäische Konzerngesellschaft:<br />
+            <strong>Cloudflare Germany GmbH</strong>, c/o Design Offices München Atlas, Rosenheimer Straße 143C, 8. Etage, 81671 München, Deutschland.
+          </p>
+          <p>
+            Da Anfragen beim Aufruf von <strong>v4nox.eu</strong> über das Netzwerk von Cloudflare geleitet werden, verarbeitet Cloudflare die in Abschnitt 3 genannten technischen Zugriffsdaten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer sicheren, zuverlässigen und performanten Auslieferung dieser Website).
+          </p>
+          <p>
+            Soweit Cloudflare personenbezogene Daten in unserem Auftrag verarbeitet, erfolgt dies auf Grundlage des <strong>Cloudflare Data Processing Addendum (DPA / Auftragsverarbeitungsvertrag gemäß Art. 28 Abs. 3 DSGVO)</strong> einschließlich der EU-Standardvertragsklauseln gemäß Art. 46 Abs. 2 lit. c DSGVO sowie der Zertifizierung nach dem EU-U.S. Data Privacy Framework. Weitere Informationen finden Sie in der <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Datenschutzerklärung von Cloudflare</a> sowie im <a href="https://www.cloudflare.com/cloudflare-customer-dpa/" target="_blank" rel="noopener noreferrer">Cloudflare Data Processing Addendum</a>.
+          </p>
+
+          <h3>6. Server- und Sicherheitsprotokolle sowie Löschfristen</h3>
+          <p>
+            STRATO und Cloudflare verarbeiten technische Protokoll- und Sicherheitsdaten, um die Website bereitzustellen, Fehler zu analysieren, Angriffe zu erkennen und die Stabilität der Infrastruktur sicherzustellen. Gemäß der mit der STRATO GmbH vereinbarten Leistungsbeschreibung werden Logfiles über Besucher der Website bzw. Diagnosedaten maximal für <strong>7 Tage</strong> gespeichert und anschließend gelöscht oder anonymisiert (sonstige technische System- und E-Mail-Logdaten nach maximal 6 bis 12 Monaten).
+          </p>
+
+          <h3>7. Einbindung von Audio-Streams &amp; Cover-Grafiken von Suno (suno.com)</h3>
+          <p>
+            In unserer interaktiven Jukebox werden die Original-Coverbilder und beim Klick auf „Abspielen“ die zugehörigen Audio-/Medien-Streams direkt von den Content-Delivery-Servern der Musikplattform <strong>Suno</strong> (<code>cdn1.suno.ai</code>, <code>cdn2.suno.ai</code>, betrieben von Suno, Inc., Cambridge, MA, USA) geladen. Dabei wird aus technischen Gründen Ihre IP-Adresse sowie Browser-Informationen an die Medienserver von Suno übermittelt, um die Audiodatei bzw. das Cover an Ihren Browser auszuliefern (Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO sowie Ihr ausdrücklicher Nutzungswunsch beim Abspielen der Jukebox). Weitere Informationen finden Sie unter <a href="https://suno.com/privacy" target="_blank" rel="noopener noreferrer">https://suno.com/privacy</a>.
+          </p>
+
+          <h3>8. Kontaktaufnahme per E-Mail</h3>
+          <p>
+            Wenn Sie uns per E-Mail (<a href="mailto:dhahn@squora.de">dhahn@squora.de</a>) kontaktieren, verarbeiten wir Ihre E-Mail-Adresse, den Inhalt Ihrer Nachricht sowie weitere von Ihnen übermittelte Informationen zur Bearbeitung und Beantwortung Ihrer Anfrage.
+          </p>
+          <p>
+            Die Verarbeitung erfolgt, soweit Ihre Anfrage der Vertragsanbahnung dient, auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO und im Übrigen auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bearbeitung der an uns gerichteten Kommunikation). Die Daten werden gelöscht, sobald die Anfrage abschließend bearbeitet wurde und keine gesetzlichen Aufbewahrungspflichten bestehen.
+          </p>
+
+          <h3>9. Externe Links</h3>
+          <p>
+            Diese Website enthält Links zu externen Angeboten, insbesondere zu <a href="https://suno.com/@dome_hahn" target="_blank" rel="noopener noreferrer">suno.com/@dome_hahn</a>. Erst wenn Sie einen externen Link aktiv anklicken, verlassen Sie v4nox.eu. Für die anschließende Datenverarbeitung ist der jeweilige Betreiber des externen Angebots verantwortlich.
+          </p>
+
+          <h3>10. Empfänger personenbezogener Daten &amp; Drittlandtransfer</h3>
+          <p>
+            Zu den möglichen Empfängern gehören insbesondere die <strong>STRATO GmbH</strong> (und deren nach Art. 28 DSGVO vertraglich gebundene Subunternehmer gemäß AV-Vertrag), <strong>Cloudflare</strong> und verbundene Cloudflare-Unternehmen (CDN &amp; Edge-Auslieferung) sowie <strong>Suno, Inc.</strong> (beim Laden der Medien-Streams). Soweit eine Übermittlung in Drittländer außerhalb des EWR stattfindet, verfügt Cloudflare über eine Zertifizierung nach dem <strong>EU-U.S. Data Privacy Framework (DPF)</strong>; ergänzend gelten die EU-Standarddatenschutzklauseln gemäß Art. 46 Abs. 2 lit. c DSGVO.
+          </p>
+
+          <h3>11. Ihre Rechte als betroffene Person</h3>
+          <p>
+            Soweit die gesetzlichen Voraussetzungen erfüllt sind, stehen Ihnen insbesondere folgende Rechte zu:
+          </p>
+          <ul>
+            <li>Auskunft gemäß Art. 15 DSGVO,</li>
+            <li>Berichtigung gemäß Art. 16 DSGVO,</li>
+            <li>Löschung gemäß Art. 17 DSGVO,</li>
+            <li>Einschränkung der Verarbeitung gemäß Art. 18 DSGVO,</li>
+            <li>Datenübertragbarkeit gemäß Art. 20 DSGVO,</li>
+            <li>Widerspruch gemäß Art. 21 DSGVO.</li>
+          </ul>
+          <p>
+            Zur Ausübung Ihrer Rechte genügt eine formlose Nachricht an <a href="mailto:dhahn@squora.de">dhahn@squora.de</a>.
+          </p>
+
+          <h3>12. Beschwerderecht bei einer Aufsichtsbehörde</h3>
+          <p>
+            Sie haben gemäß Art. 77 DSGVO das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren. Für den Verantwortlichen zuständig ist grundsätzlich:<br /><br />
+            <strong>Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Rheinland-Pfalz</strong><br />
+            Hintere Bleiche 34<br />
+            55116 Mainz<br />
+            Deutschland<br />
+            E-Mail: <a href="mailto:poststelle@datenschutz.rlp.de">poststelle@datenschutz.rlp.de</a><br />
+            Website: <a href="https://www.datenschutz.rlp.de" target="_blank" rel="noopener noreferrer">www.datenschutz.rlp.de</a>
+          </p>
+
+          <h3>13. Automatisierte Entscheidungsfindung</h3>
+          <p>
+            Es findet keine automatisierte Entscheidungsfindung einschließlich Profiling im Sinne von Art. 22 DSGVO statt.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
