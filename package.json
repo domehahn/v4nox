@@ -2,6 +2,23 @@
   "name": "v4nox",
   "private": true,
   "version": "1.0.0",
+  "description": "Official artist website & interactive 210-song AI Jukebox for V4noX (@dome_hahn) — ChatGPT Lyrics & Style × Suno V6 Music on v4nox.eu",
+  "homepage": "https://v4nox.eu",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/domehahn/v4nox.git"
+  },
+  "author": "Dominik Hahn <dhahn@squora.de> (https://v4nox.eu)",
+  "keywords": [
+    "v4nox",
+    "suno-ai",
+    "ai-music",
+    "chatgpt",
+    "jukebox",
+    "scrollytelling",
+    "web-audio-api",
+    "cloudflare"
+  ],
   "type": "module",
   "scripts": {
     "dev": "node scripts/dev-server.mjs",
