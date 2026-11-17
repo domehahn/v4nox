@@ -2,7 +2,10 @@
 <html lang="de" class="dark">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="format-detection" content="telephone=no" />
   <title>v4nox (@dome_hahn) — AI Jukebox | ChatGPT Lyrics &amp; Suno V6 Music</title>
   <meta name="description" content="Offizielle Artist-Seite von v4nox (@dome_hahn). Alle 20 Original-Songs vollständig KI-generiert mit ChatGPT (Lyrics & Style) und Suno V6 Audio-Synthese." />
   <meta name="theme-color" content="#000000" />
@@ -46,8 +49,9 @@
 
       <div class="nav-actions">
         <a href="https://suno.com/@dome_hahn" target="_blank" rel="noopener noreferrer" class="btn-pill btn-pill-primary">
-          <span>@dome_hahn auf Suno</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+          <span class="nav-btn-text-full">@dome_hahn auf Suno</span>
+          <span class="nav-btn-text-short">Suno</span>
+          <svg class="nav-btn-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
         </a>
       </div>
     </div>
@@ -76,10 +80,12 @@
         <div class="hero-cta-group reveal-up">
           <a href="#jukebox" class="btn-apple-lg btn-apple-glow" id="hero-jukebox-btn">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-            <span>Jukebox starten (Alle 210 Original-Songs)</span>
+            <span class="hero-btn-full">Jukebox starten (Alle 210 Original-Songs)</span>
+            <span class="hero-btn-short">Jukebox starten (210 Songs)</span>
           </a>
           <a href="https://suno.com/@dome_hahn" target="_blank" rel="noopener noreferrer" class="btn-apple-lg btn-apple-glass">
-            <span>Offizielles Suno-Profil (@dome_hahn)</span>
+            <span class="hero-btn-full">Offizielles Suno-Profil (@dome_hahn)</span>
+            <span class="hero-btn-short">Suno-Profil (@dome_hahn)</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </a>
         </div>
@@ -145,7 +151,8 @@
               <span class="light green"></span>
             </div>
             <div class="mac-window-title">
-              <span>v4nox Jukebox Pro — Alle 210 Original-Tracks (@dome_hahn)</span>
+              <span class="window-title-full">v4nox Jukebox Pro — Alle 210 Original-Tracks (@dome_hahn)</span>
+              <span class="window-title-short">v4nox Jukebox (210 Songs)</span>
             </div>
             <div class="mac-window-badge" id="jukebox-status-badge">SUNO DIRECT STREAM</div>
           </div>
@@ -212,10 +219,12 @@
               <!-- Inspector Tabs: ChatGPT Lyrics vs. ChatGPT Style Prompt -->
               <div class="jukebox-tabs-bar">
                 <button type="button" class="jb-tab active" data-jb-tab="lyrics">
-                  <span>ChatGPT Songtext &amp; Regie-Tags</span>
+                  <span class="tab-label-full">ChatGPT Songtext &amp; Regie-Tags</span>
+                  <span class="tab-label-short">Songtext &amp; Regie</span>
                 </button>
                 <button type="button" class="jb-tab" data-jb-tab="style">
-                  <span>ChatGPT Style-Prompt &amp; KI-Details</span>
+                  <span class="tab-label-full">ChatGPT Style-Prompt &amp; KI-Details</span>
+                  <span class="tab-label-short">Style &amp; Prompt</span>
                 </button>
               </div>
 
@@ -298,7 +307,8 @@
                 <span class="light green"></span>
               </div>
               <div class="mac-window-title">
-                <span>v4nox Studio Inspector —</span>
+                <span class="studio-title-prefix-full">v4nox Studio Inspector —</span>
+                <span class="studio-title-prefix-short">Studio —</span>
                 <select id="studio-song-select" class="studio-song-select" aria-label="Song für Studio-Inspektor wählen"></select>
               </div>
               <div class="mac-window-badge" id="ui-stage-pill">STAGE 01 // CHATGPT LYRICS</div>
@@ -309,20 +319,25 @@
               <!-- Sidebar -->
               <aside class="studio-sidebar">
                 <div class="sidebar-group-title">INSPEKTOR-ANSICHT</div>
-                <button type="button" class="sidebar-item active" data-stage-indicator="0">
-                  <span class="s-dot"></span>
-                  <span>01. Lyrics &amp; Cues</span>
-                </button>
-                <button type="button" class="sidebar-item" data-stage-indicator="1">
-                  <span class="s-dot"></span>
-                  <span>02. Style &amp; Negative</span>
-                </button>
-                <button type="button" class="sidebar-item" data-stage-indicator="2">
-                  <span class="s-dot"></span>
-                  <span>03. Suno Settings</span>
-                </button>
+                <div class="sidebar-items-nav">
+                  <button type="button" class="sidebar-item active" data-stage-indicator="0">
+                    <span class="s-dot"></span>
+                    <span class="s-label-full">01. Lyrics &amp; Cues</span>
+                    <span class="s-label-short">01. Lyrics</span>
+                  </button>
+                  <button type="button" class="sidebar-item" data-stage-indicator="1">
+                    <span class="s-dot"></span>
+                    <span class="s-label-full">02. Style &amp; Negative</span>
+                    <span class="s-label-short">02. Style</span>
+                  </button>
+                  <button type="button" class="sidebar-item" data-stage-indicator="2">
+                    <span class="s-dot"></span>
+                    <span class="s-label-full">03. Suno Settings</span>
+                    <span class="s-label-short">03. Suno V6</span>
+                  </button>
+                </div>
 
-                <div class="sidebar-group-title" style="margin-top: 1.25rem;">GEWÄHLTER TRACK</div>
+                <div class="sidebar-group-title sidebar-group-track" style="margin-top: 1.25rem;">GEWÄHLTER TRACK</div>
                 <div class="sidebar-track-card">
                   <img src="https://cdn2.suno.ai/image_9801a0ec-9079-461f-aa11-36e46a8bf7d2.jpeg" alt="Cover" id="studio-active-cover" />
                   <div style="min-width:0;">
