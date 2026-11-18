@@ -42,7 +42,7 @@
 
       <nav class="nav-links" aria-label="Hauptnavigation">
         <a href="#vision" class="nav-link">Vision</a>
-        <a href="#jukebox" class="nav-link">AI Jukebox (Alle 210 Songs)</a>
+        <a href="#jukebox" class="nav-link">AI Jukebox (Alle <span class="dyn-song-count">214</span> Songs)</a>
         <a href="#studio" class="nav-link">ChatGPT × Suno Studio</a>
         <a href="#architecture" class="nav-link">Architektur</a>
       </nav>
@@ -74,14 +74,14 @@
         </h1>
 
         <p class="hero-subline reveal-up">
-          Willkommen im Klangkosmos von <strong>Dominik Hahn (@dome_hahn)</strong>. Alle <strong>210 Songs</strong> auf dieser Seite sind echte Releases von meinem Suno-Profil – komplett inklusive Songtexten, dramaturgischer Struktur und Style-Prompts durch <strong>ChatGPT</strong> entworfen und mit <strong>Suno AI</strong> vertont.
+          Willkommen im Klangkosmos von <strong>Dominik Hahn (@dome_hahn)</strong>. Alle <strong><span class="dyn-song-count">214</span> Songs</strong> auf dieser Seite sind echte Releases von meinem Suno-Profil – komplett inklusive Songtexten, dramaturgischer Struktur und Style-Prompts durch <strong>ChatGPT</strong> entworfen und mit <strong>Suno AI</strong> vertont.
         </p>
 
         <div class="hero-cta-group reveal-up">
           <a href="#jukebox" class="btn-apple-lg btn-apple-glow" id="hero-jukebox-btn">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-            <span class="hero-btn-full">Jukebox starten (Alle 210 Original-Songs)</span>
-            <span class="hero-btn-short">Jukebox starten (210 Songs)</span>
+            <span class="hero-btn-full">Jukebox starten (Alle <span class="dyn-song-count">214</span> Original-Songs)</span>
+            <span class="hero-btn-short">Jukebox starten (<span class="dyn-song-count">214</span> Songs)</span>
           </a>
           <a href="https://suno.com/@dome_hahn" target="_blank" rel="noopener noreferrer" class="btn-apple-lg btn-apple-glass">
             <span class="hero-btn-full">Offizielles Suno-Profil (@dome_hahn)</span>
@@ -118,8 +118,8 @@
               <span class="hud-dot violet"></span>
               <span class="hud-title">SUNO KATALOG</span>
             </div>
-            <div class="hud-code">210 Echte Releases • @dome_hahn</div>
-            <div class="hud-sub">84 DE • 75 ES • 51 EN Tracks</div>
+            <div class="hud-code"><span class="dyn-song-count">214</span> Echte Releases • @dome_hahn</div>
+            <div class="hud-sub" id="hud-lang-breakdown">63 DE • 15 ES • 136 EN Tracks</div>
           </div>
         </div>
 
@@ -130,14 +130,14 @@
       </div>
     </section>
 
-    <!-- SECTION 2: DIE INTERAKTIVE v4nox AI JUKEBOX (All 210 Real Songs + ChatGPT Lyrics & Style Inspector) -->
+    <!-- SECTION 2: DIE INTERAKTIVE v4nox AI JUKEBOX (All Real Songs + ChatGPT Lyrics & Style Inspector) -->
     <section class="jukebox-section" id="jukebox">
       <div class="container">
         <div class="section-intro">
-          <p class="eyebrow reveal-up">KOMPLETTER KATALOG VON @DOME_HAHN (210 SONGS)</p>
+          <p class="eyebrow reveal-up">KOMPLETTER KATALOG VON @DOME_HAHN (<span class="dyn-song-count">214</span> SONGS)</p>
           <h2 class="display-title reveal-up">Die v4nox AI-Jukebox.</h2>
           <p class="section-lead reveal-up">
-            Wähle aus allen <strong>210 veröffentlichten Original-Songs</strong> von <a href="https://suno.com/@dome_hahn" target="_blank" rel="noopener noreferrer" class="inline-accent-link">suno.com/@dome_hahn</a>. Du hörst den echten Suno-Stream und kannst parallel den kompletten von <strong>ChatGPT generierten Songtext</strong> sowie den exakten <strong>ChatGPT Style-Prompt &amp; die Suno-Einstellungen</strong> jedes einzelnen Liedes einsehen.
+            Wähle aus allen <strong><span class="dyn-song-count">214</span> veröffentlichten Original-Songs</strong> von <a href="https://suno.com/@dome_hahn" target="_blank" rel="noopener noreferrer" class="inline-accent-link">suno.com/@dome_hahn</a>. Du hörst den echten Suno-Stream und kannst parallel den kompletten von <strong>ChatGPT generierten Songtext</strong> sowie den exakten <strong>ChatGPT Style-Prompt &amp; die Suno-Einstellungen</strong> jedes einzelnen Liedes einsehen.
           </p>
         </div>
 
@@ -151,8 +151,8 @@
               <span class="light green"></span>
             </div>
             <div class="mac-window-title">
-              <span class="window-title-full">v4nox Jukebox Pro — Alle 210 Original-Tracks (@dome_hahn)</span>
-              <span class="window-title-short">v4nox Jukebox (210 Songs)</span>
+              <span class="window-title-full">v4nox Jukebox Pro — Alle <span class="dyn-song-count">214</span> Original-Tracks (@dome_hahn)</span>
+              <span class="window-title-short">v4nox Jukebox (<span class="dyn-song-count">214</span> Songs)</span>
             </div>
             <div class="mac-window-badge" id="jukebox-status-badge">SUNO DIRECT STREAM</div>
           </div>
@@ -164,13 +164,13 @@
               <div class="jukebox-toolbar">
                 <div class="jukebox-search-wrap">
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-                  <input type="search" id="jukebox-search" placeholder="Unter 210 Songs nach Titel, Text, Style oder BPM suchen..." aria-label="Songs durchsuchen" />
+                  <input type="search" id="jukebox-search" placeholder="Unter 214 Songs nach Titel, Text, Style oder BPM suchen..." aria-label="Songs durchsuchen" />
                 </div>
                 <div class="jukebox-lang-filters" role="group" aria-label="Nach Sprache filtern">
-                  <button type="button" class="filter-chip active" data-lang-filter="ALL">Alle (210)</button>
-                  <button type="button" class="filter-chip" data-lang-filter="DE">DE 🇩🇪 (84)</button>
-                  <button type="button" class="filter-chip" data-lang-filter="ES">ES 🇪🇸 (75)</button>
-                  <button type="button" class="filter-chip" data-lang-filter="EN">EN 🇬🇧 (51)</button>
+                  <button type="button" class="filter-chip active" data-lang-filter="ALL">Alle (214)</button>
+                  <button type="button" class="filter-chip" data-lang-filter="DE">DE 🇩🇪 (63)</button>
+                  <button type="button" class="filter-chip" data-lang-filter="ES">ES 🇪🇸 (15)</button>
+                  <button type="button" class="filter-chip" data-lang-filter="EN">EN 🇬🇧 (136)</button>
                 </div>
               </div>
 
@@ -266,12 +266,12 @@
           </div>
         </div>
 
-        <!-- Direct Suno Links Directory for all 210 Songs -->
+        <!-- Direct Suno Links Directory for all Songs -->
         <div class="all-suno-links-box reveal-up">
           <div class="all-suno-links-header">
             <div>
-              <span class="eyebrow" style="display:block; margin-bottom:4px;">ALLE 210 SUNO DIREKTLINKS</span>
-              <h3>Direkt zu jedem einzelnen deiner 210 Songs auf suno.com/@dome_hahn</h3>
+              <span class="eyebrow" style="display:block; margin-bottom:4px;">ALLE <span class="dyn-song-count">214</span> SUNO DIREKTLINKS</span>
+              <h3>Direkt zu jedem einzelnen deiner <span class="dyn-song-count">214</span> Songs auf suno.com/@dome_hahn</h3>
             </div>
             <a href="https://suno.com/@dome_hahn" target="_blank" rel="noopener noreferrer" class="btn-pill btn-pill-glass">
               <span>Komplettes @dome_hahn Profil</span>
@@ -279,7 +279,7 @@
             </a>
           </div>
           <div class="all-suno-links-grid" id="all-suno-links-grid">
-            <!-- Populated dynamically with all 210 Suno song links -->
+            <!-- Populated dynamically with all Suno song links -->
           </div>
         </div>
       </div>
@@ -289,9 +289,9 @@
     <section class="scrolly-section" id="studio">
       <div class="section-intro container">
         <p class="eyebrow reveal-up">CHATGPT × SUNO V6 STUDIO</p>
-        <h2 class="display-title reveal-up">Echte Prompts, Styles &amp; Einstellungen für alle 210 Songs.</h2>
+        <h2 class="display-title reveal-up">Echte Prompts, Styles &amp; Einstellungen für alle <span class="dyn-song-count">214</span> Songs.</h2>
         <p class="section-lead reveal-up">
-          Wähle direkt im Studio-Fenster (oder oben in der Jukebox) eines deiner <strong>210 Lieder</strong> aus. Während du scrollst, zeigt das macOS-Studio-Interface die <strong>originalen ChatGPT-Regieanweisungen</strong>, die <strong>exakten Style- &amp; Negative-Prompts</strong> sowie die <strong>Suno-Einstellungen (Control Sliders, Max Mode, Vox Render Mode)</strong> des gewählten Songs.
+          Wähle direkt im Studio-Fenster (oder oben in der Jukebox) eines deiner <strong><span class="dyn-song-count">214</span> Lieder</strong> aus. Während du scrollst, zeigt das macOS-Studio-Interface die <strong>originalen ChatGPT-Regieanweisungen</strong>, die <strong>exakten Style- &amp; Negative-Prompts</strong> sowie die <strong>Suno-Einstellungen (Control Sliders, Max Mode, Vox Render Mode)</strong> des gewählten Songs.
         </p>
       </div>
 
@@ -472,7 +472,7 @@
               </p>
             </div>
             <div class="bento-metric-big">
-              <span class="bm-value">210 Songs</span>
+              <span class="bm-value"><span class="dyn-song-count">214</span> Songs</span>
               <span class="bm-label">Original-Tracks von @dome_hahn</span>
             </div>
           </article>

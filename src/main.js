@@ -2,6 +2,7 @@ import { TRACKS, WORKFLOW_STEPS } from "./tracks.js";
 import { SunoAudioEngine } from "./audioEngine.js";
 
 const audioEngine = new SunoAudioEngine();
+let currentTracks = [...TRACKS];
 let activeTrackIndex = 0;
 let activeLangFilter = "ALL";
 let searchQuery = "";
@@ -195,10 +196,10 @@ function updateStudioInspector(track, isPlaying) {
 }
 
 /* ========================================================
-   3. RENDER INTERACTIVE 20-SONG JUKEBOX
+   3. RENDER INTERACTIVE JUKEBOX
    ======================================================== */
 function getFilteredTracks() {
-  return TRACKS.map((track, originalIndex) => ({ track, originalIndex })).filter(
+  return currentTracks.map((track, originalIndex) => ({ track, originalIndex })).filter(
     ({ track }) => {
       const matchesLang =
         activeLangFilter === "ALL" || track.language === activeLangFilter;
@@ -273,9 +274,9 @@ function renderJukeboxPlaylist() {
     const activateRow = () => {
       const idx = parseInt(row.getAttribute("data-jb-index"), 10);
       activeTrackIndex = idx;
-      audioEngine.playTrack(TRACKS[idx]);
-      updateJukeboxInspector(TRACKS[idx], audioEngine.isPlaying);
-      updateStudioInspector(TRACKS[idx], audioEngine.isPlaying);
+      audioEngine.playTrack(currentTracks[idx]);
+      updateJukeboxInspector(currentTracks[idx], audioEngine.isPlaying);
+      updateStudioInspector(currentTracks[idx], audioEngine.isPlaying);
       renderJukeboxPlaylist();
     };
     row.addEventListener("click", activateRow);
@@ -344,6 +345,103 @@ function updateJukeboxInspector(track, isPlaying) {
   }
 }
 
+/* ========================================================
+   DYNAMIC TRACK SYNC & DOM COUNTERS
+   ======================================================== */
+function updateTrackCountsInDOM() {
+  const total = currentTracks.length;
+  document.querySelectorAll(".dyn-song-count").forEach((el) => {
+    el.textContent = String(total);
+  });
+
+  const deCount = currentTracks.filter((t) => t.language === "DE").length;
+  const esCount = currentTracks.filter((t) => t.language === "ES").length;
+  const enCount = currentTracks.filter((t) => t.language === "EN").length;
+
+  const hudBreakdown = document.getElementById("hud-lang-breakdown");
+  if (hudBreakdown) {
+    hudBreakdown.textContent = `${deCount} DE • ${esCount} ES • ${enCount} EN Tracks`;
+  }
+
+  const btnAll = document.querySelector('[data-lang-filter="ALL"]');
+  if (btnAll) btnAll.textContent = `Alle (${total})`;
+  const btnDe = document.querySelector('[data-lang-filter="DE"]');
+  if (btnDe) btnDe.textContent = `DE 🇩🇪 (${deCount})`;
+  const btnEs = document.querySelector('[data-lang-filter="ES"]');
+  if (btnEs) btnEs.textContent = `ES 🇪🇸 (${esCount})`;
+  const btnEn = document.querySelector('[data-lang-filter="EN"]');
+  if (btnEn) btnEn.textContent = `EN 🇬🇧 (${enCount})`;
+
+  const searchInput = document.getElementById("jukebox-search");
+  if (searchInput) {
+    searchInput.placeholder = `Unter ${total} Songs nach Titel, Text, Style oder BPM suchen...`;
+  }
+}
+
+function populateStudioDropdown() {
+  const songSelect = document.getElementById("studio-song-select");
+  if (!songSelect) return;
+  const prevVal = songSelect.value;
+  songSelect.innerHTML = currentTracks
+    .map(
+      (t, i) =>
+        `<option value="${i}">#${t.number} — ${t.title} (${t.bpm} BPM • ${t.language})</option>`
+    )
+    .join("");
+  if (prevVal !== undefined && prevVal !== null && prevVal !== "") {
+    songSelect.value = prevVal;
+  }
+}
+
+function populateSunoLinksGrid() {
+  const allLinksGrid = document.getElementById("all-suno-links-grid");
+  if (!allLinksGrid) return;
+  allLinksGrid.innerHTML = currentTracks
+    .map(
+      (t) => `
+      <a href="${t.sunoUrl}" target="_blank" rel="noopener noreferrer" class="suno-direct-pill">
+        <div class="sdp-left">
+          <span class="sdp-num">#${t.number}</span>
+          <span class="sdp-title">${t.title}</span>
+        </div>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="flex-shrink:0; color:var(--accent-cyan);"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+      </a>
+    `
+    )
+    .join("");
+}
+
+async function syncLiveTracksFromApi() {
+  try {
+    const res = await fetch("/api/tracks");
+    if (!res.ok) return;
+    const data = await res.json();
+    if (data && data.success && Array.isArray(data.tracks) && data.tracks.length > 0) {
+      const isCountChanged = data.tracks.length !== currentTracks.length;
+      const isTopChanged = data.tracks[0]?.id !== currentTracks[0]?.id;
+
+      currentTracks = data.tracks;
+      updateTrackCountsInDOM();
+      populateStudioDropdown();
+      populateSunoLinksGrid();
+      renderJukeboxPlaylist();
+
+      const badge = document.getElementById("jukebox-status-badge");
+      if (badge) {
+        badge.textContent = `SUNO DIRECT STREAM • ${currentTracks.length} TRACKS LIVE SYNCED`;
+        badge.style.borderColor = "var(--accent-cyan)";
+        badge.style.color = "var(--accent-cyan)";
+      }
+
+      if (isCountChanged || isTopChanged) {
+        console.info(`[v4nox] Live Suno track sync: Updated catalog to ${currentTracks.length} tracks.`);
+      }
+    }
+  } catch (err) {
+    console.warn("[v4nox] Live Suno track sync skipped:", err);
+  }
+}
+
 function setupJukeboxAndStudioControls() {
   const searchInput = document.getElementById("jukebox-search");
   const filterBtns = document.querySelectorAll("[data-lang-filter]");
@@ -355,25 +453,23 @@ function setupJukeboxAndStudioControls() {
   const songSelect = document.getElementById("studio-song-select");
   const studioSidebarPlayBtn = document.getElementById("studio-sidebar-play-btn");
 
-  // Populate Studio Song Dropdown with all 20 tracks
+  // Populate Studio Song Dropdown with tracks
   if (songSelect) {
-    songSelect.innerHTML = TRACKS.map(
-      (t, i) => `<option value="${i}">#${t.number} — ${t.title} (${t.bpm} BPM • ${t.language})</option>`
-    ).join("");
+    populateStudioDropdown();
 
     songSelect.addEventListener("change", (e) => {
       const idx = parseInt(e.target.value, 10);
       activeTrackIndex = idx;
-      audioEngine.selectTrackWithoutAutoplay(TRACKS[idx]);
-      updateJukeboxInspector(TRACKS[idx], false);
-      updateStudioInspector(TRACKS[idx], false);
+      audioEngine.selectTrackWithoutAutoplay(currentTracks[idx]);
+      updateJukeboxInspector(currentTracks[idx], false);
+      updateStudioInspector(currentTracks[idx], false);
       renderJukeboxPlaylist();
     });
   }
 
   if (studioSidebarPlayBtn) {
     studioSidebarPlayBtn.addEventListener("click", () => {
-      audioEngine.playTrack(TRACKS[activeTrackIndex]);
+      audioEngine.playTrack(currentTracks[activeTrackIndex]);
     });
   }
 
@@ -404,33 +500,21 @@ function setupJukeboxAndStudioControls() {
   });
 
   const toggleActive = () => {
-    audioEngine.playTrack(TRACKS[activeTrackIndex]);
+    audioEngine.playTrack(currentTracks[activeTrackIndex]);
   };
 
   if (mainPlayBtn) mainPlayBtn.addEventListener("click", toggleActive);
   if (coverPlayBtn) coverPlayBtn.addEventListener("click", toggleActive);
 
-  // Initialize with Track 01 ("NACHT AUF ANSCHLAG")
-  audioEngine.selectTrackWithoutAutoplay(TRACKS[0]);
-  updateJukeboxInspector(TRACKS[0], false);
-  updateStudioInspector(TRACKS[0], false);
-  renderJukeboxPlaylist();
-
-  // Populate All 20 Direct Suno Links Grid
-  const allLinksGrid = document.getElementById("all-suno-links-grid");
-  if (allLinksGrid) {
-    allLinksGrid.innerHTML = TRACKS.map(
-      (t) => `
-      <a href="${t.sunoUrl}" target="_blank" rel="noopener noreferrer" class="suno-direct-pill">
-        <div class="sdp-left">
-          <span class="sdp-num">#${t.number}</span>
-          <span class="sdp-title">${t.title}</span>
-        </div>
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="flex-shrink:0; color:var(--accent-cyan);"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
-      </a>
-    `
-    ).join("");
+  // Initialize with Track 01
+  if (currentTracks.length > 0) {
+    audioEngine.selectTrackWithoutAutoplay(currentTracks[0]);
+    updateJukeboxInspector(currentTracks[0], false);
+    updateStudioInspector(currentTracks[0], false);
   }
+  renderJukeboxPlaylist();
+  populateSunoLinksGrid();
+  updateTrackCountsInDOM();
 }
 
 /* ========================================================
@@ -453,27 +537,27 @@ function setupAudioUI() {
 
   if (dockPlayBtn) {
     dockPlayBtn.addEventListener("click", () => {
-      audioEngine.playTrack(TRACKS[activeTrackIndex]);
+      audioEngine.playTrack(currentTracks[activeTrackIndex]);
     });
   }
 
   if (dockPrevBtn) {
     dockPrevBtn.addEventListener("click", () => {
-      activeTrackIndex = (activeTrackIndex - 1 + TRACKS.length) % TRACKS.length;
-      audioEngine.playTrack(TRACKS[activeTrackIndex]);
+      activeTrackIndex = (activeTrackIndex - 1 + currentTracks.length) % currentTracks.length;
+      audioEngine.playTrack(currentTracks[activeTrackIndex]);
     });
   }
 
   if (dockNextBtn) {
     dockNextBtn.addEventListener("click", () => {
-      activeTrackIndex = (activeTrackIndex + 1) % TRACKS.length;
-      audioEngine.playTrack(TRACKS[activeTrackIndex]);
+      activeTrackIndex = (activeTrackIndex + 1) % currentTracks.length;
+      audioEngine.playTrack(currentTracks[activeTrackIndex]);
     });
   }
 
   audioEngine.onEnded = () => {
-    activeTrackIndex = (activeTrackIndex + 1) % TRACKS.length;
-    audioEngine.playTrack(TRACKS[activeTrackIndex]);
+    activeTrackIndex = (activeTrackIndex + 1) % currentTracks.length;
+    audioEngine.playTrack(currentTracks[activeTrackIndex]);
   };
 
   if (dockScrubber) {
@@ -770,4 +854,5 @@ document.addEventListener("DOMContentLoaded", () => {
   setupScrollChoreography();
   startCanvasVisualizers();
   setupLegalModal();
+  syncLiveTracksFromApi();
 });

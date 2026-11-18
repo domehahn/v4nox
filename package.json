@@ -2,7 +2,7 @@
   "name": "v4nox",
   "private": true,
   "version": "1.0.0",
-  "description": "Official artist website & interactive 210-song AI Jukebox for V4noX (@dome_hahn) — ChatGPT Lyrics & Style × Suno V6 Music on v4nox.eu",
+  "description": "Official artist website & interactive 214+ song AI Jukebox for V4noX (@dome_hahn) — ChatGPT Lyrics & Style × Suno V6 Music on v4nox.eu",
   "homepage": "https://v4nox.eu",
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   "type": "module",
   "scripts": {
     "dev": "node scripts/dev-server.mjs",
+    "sync:suno": "node scripts/sync-suno.mjs",
     "build": "node scripts/build.mjs",
     "cf:dev": "npm run build && npx wrangler dev",
     "deploy": "npm run build && npx wrangler deploy",
