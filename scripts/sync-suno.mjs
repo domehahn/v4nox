@@ -237,9 +237,9 @@ export const WORKFLOW_STEPS = [
     let html = fs.readFileSync(htmlPath, "utf8");
     // Replace old count with the new total
     html = html.replace(/(<span class="dyn-song-count">)\d+(<\/span>)/g, `$1${total}$2`);
-    html = html.replace(/(?:210|214)(\s*(?:Songs|Original-Tracks|Tracks|Original-Songs|Lieder))/g, `${total}$1`);
-    html = html.replace(/Alle (?:210|214)/g, `Alle ${total}`);
-    html = html.replace(/unter (?:210|214)/gi, `unter ${total}`);
+    html = html.replace(/\b\d+(\s*(?:Songs|Original-Tracks|Tracks|Original-Songs|Lieder))\b/g, `${total}$1`);
+    html = html.replace(/Alle \d+/g, `Alle ${total}`);
+    html = html.replace(/unter \d+/gi, `unter ${total}`);
     html = html.replace(/data-lang-filter="ALL">Alle \(\d+\)/g, `data-lang-filter="ALL">Alle (${total})`);
     html = html.replace(/data-lang-filter="DE">DE 🇩🇪 \(\d+\)/g, `data-lang-filter="DE">DE 🇩🇪 (${de})`);
     html = html.replace(/data-lang-filter="ES">ES 🇪🇸 \(\d+\)/g, `data-lang-filter="ES">ES 🇪🇸 (${es})`);

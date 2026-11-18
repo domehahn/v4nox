@@ -1,7 +1,7 @@
 // Automatisch synchronisiert mit https://suno.com/@dome_hahn
-// ALLE 215 Original-Songs von Dominik Hahn (@dome_hahn / V4noX)
+// ALLE 216 Original-Songs von Dominik Hahn (@dome_hahn / V4noX)
 // Inkl. der echten ChatGPT-Lyrics, Style-Prompts, Negative-Tags und Suno Control-Sliders
-// Zuletzt synchronisiert: 2026-11-18T12:33:44.855Z
+// Zuletzt synchronisiert: 2026-11-18T13:45:23.273Z
 
 export const ARTIST_INFO = {
   artistName: "V4noX",
@@ -9,9 +9,9 @@ export const ARTIST_INFO = {
   realName: "Dominik Hahn",
   domain: "v4nox.eu",
   sunoUrl: "https://suno.com/@dome_hahn",
-  totalSongs: 215,
+  totalSongs: 216,
   languages: {
-    DE: 64,
+    DE: 65,
     ES: 15,
     EN: 136
   },
@@ -21,12 +21,57 @@ export const ARTIST_INFO = {
 
 export const TRACKS = [
   {
-    "id": "1174ca90-73ca-4b5c-b3d2-c0d06f0676a4",
+    "id": "5b5bc388-ee63-42e1-a9e1-4c42210596a1",
     "number": "001",
+    "title": "BASSBEFEHL",
+    "bpm": 130,
+    "language": "DE",
+    "playCount": 6,
+    "upvoteCount": 0,
+    "durationSeconds": 245,
+    "duration": "4:05",
+    "model": "Suno V6 (chirp-hawk)",
+    "displayTags": "party rap, EDM",
+    "shortStyle": "130 BPM, explosive German party rap and festival EDM, i...",
+    "stylePrompt": "130 BPM, explosive German party rap and festival EDM, immediate crowd-hype intro, huge four-on-the-floor kick, deep punchy rolling synth bass, powerful clean sub bass, crisp dry claps, aggressive rhythmic synth stabs, bright euphoric supersaw lead, confident slightly raspy male German party-rap vocals, short punchy rhythmic verses, massive repetitive \"Bassbefehl\" singalong chorus, shouted call-and-response \"MEHR BASS\", playful stutter hook \"Ba-ba-Bassbefehl\", tension-building pre-choruses, dramatic one-beat silences, hard bass-heavy instrumental drops with no vocals, catchy repeating festival synth melody, gritty minimal club break, extended DJ-friendly instrumental sections, accelerating snare builds, wide polished modern mix, wild hands-in-the-air energy, nonstop dancefloor momentum, no schlager, no rock, no acoustic instruments, no soft breakdowns.",
+    "negativeTags": "rock, hard rock, metal, schlager, party schlager, carnival, brass band, oompah, folk, reggae, punk, comedy, orchestral",
+    "lyrics": "[Intro – 16 Bars | Instrumental]\n[Filtered rolling bass, dry kick, claps, distant crowd]\n[Male – Deep, confident shouts]\n\nEy! Ey!\nWer hat hier Feierabend?\n[Crowd] KEINER!\nWer will nach Hause?\n[Crowd] KEINER!\n\nDann hört auf zu reden!\nUnd lasst den Bass sprechen!\n\n[Build – 8 Bars]\n[Rising synth, snare rolls, bass filter opens]\nLinks die Hände!\nRechts die Hände!\nAlle zusammen!\n\nDREI! ZWEI! EINS!\n\n[Opening Drop – 16 Bars | Instrumental]\n[Thunderous four-on-the-floor kick, rolling sub bass]\n[Aggressive synth stabs, euphoric lead melody]\n[No vocals, pure festival energy]\n\n[Verse 1 – 16 Bars | Punchy Party Rap]\nJacke fliegt\nÜber'n Stuhl\nErster Track\nViel zu gut\n\nLicht geht aus\nSpot geht an\nJeder weiß\nJetzt sind wir dran\n\nKick auf vier\nBass marschiert\nMeine Crew\nEskaliert\n\nDJ nickt\nZieht ihn hoch\nHinten ruft wer\nNOCH! NOCH! NOCH!\n\n[Pre-Chorus – 8 Bars | Rising Tension]\n[Filtered drums, ascending chords, crowd claps]\nWir sind noch lange nicht am Ziel\nHeut gibt es nur noch ein Gefühl\nDie ganze Halle atmet ein\nUnd bei der Eins bricht alles rein!\n\n[Male] Was ist der Befehl?\n[Crowd] MEHR BASS!\n[Male] Drei, zwei, eins!\n\n[One-Beat Silence]\n\n[Chorus – 16 Bars | Massive Singalong]\nBASSBEFEHL! BASSBEFEHL!\nHeute zählt hier nur der Pegel!\nBASSBEFEHL! BASSBEFEHL!\nAlle Hände an die Decke!\n\nHEY! HEY! Alle nach vorn!\nHEY! HEY! Noch eine Rund'!\nBASSBEFEHL! BASSBEFEHL!\nUnd der ganze Laden springt!\n\n[Post-Chorus – 8 Bars | Chopped Hook]\n[Stuttering male vocal, bouncing synth bass]\nBa-ba-Bassbefehl!\n[Crowd] MEHR! MEHR!\nBa-ba-Bassbefehl!\n[Crowd] NOCH MEHR!\n\n[Instrumental Drop – 16 Bars]\n[Huge melodic supersaw hook, pounding kick]\n[Elastic rolling synth bass, wide claps]\n[No vocals, maximum dancefloor pressure]\n\n[Verse 2 – 16 Bars | Short Rhythmic Rap]\nZweite Rund'\nNächster Track\nKeiner will\nHier wieder weg\n\nDJ lacht\nRegler dreht\nBis die Luft\nVor Spannung steht\n\nLinks ein Sprung\nRechts ein Chor\nAlle Hände\nSchießen vor\n\nLichter zucken\nBoden lebt\nUnd die ganze\nMenge bebt!\n\n[Pre-Chorus – 8 Bars | Stronger Build]\n[Kick filters down, snares climb, synths swell]\nWir sind noch lange nicht am Ziel\nHeut gibt es nur noch ein Gefühl\nDie ganze Halle atmet ein\nUnd bei der Eins bricht alles rein!\n\n[Male] Was ist der Befehl?\n[Crowd] MEHR BASS!\n[Male] Drei, zwei, eins!\n\n[One-Beat Silence]\n\n[Chorus – 16 Bars | Full Power]\nBASSBEFEHL! BASSBEFEHL!\nHeute zählt hier nur der Pegel!\nBASSBEFEHL! BASSBEFEHL!\nAlle Hände an die Decke!\n\nHEY! HEY! Alle nach vorn!\nHEY! HEY! Noch eine Rund'!\nBASSBEFEHL! BASSBEFEHL!\nUnd der ganze Laden springt!\n\n[Club Break – 16 Bars | Minimal Heavy Groove]\n[Supersaws cut out, gritty bass, dry kick, sparse synth stabs]\n[Male – Spoken over bass pulse]\n\nEy, DJ!\nSag mal, war das schon alles?\n[DJ] Nö.\n[Male] Na dann ...\n\n[Crowd] DREH! IHN! AUF!\n[Crowd] DREH! IHN! AUF!\n\n[Final Build – 16 Bars | Mainstage Tension]\n[Snare rolls accelerate, supersaws widen]\n[Male – Shouted]\nKeiner geht!\n[Crowd] HEIM!\nKeiner bleibt!\n[Crowd] STEH'N!\n\nEinmal links!\nEinmal rechts!\nUnd jetzt alle!\nVOLLES BRETT!\n\n[Everything stops – One beat]\n[Male – Whisper] Bass ... befehl ...\n\n[Final Instrumental Drop – 16 Bars]\n[Massive four-on-the-floor kick, gigantic sub bass]\n[Explosive euphoric supersaw melody, aggressive stabs]\n[No vocals, full mainstage impact]\n\n[Final Chorus – 8 Bars | Crowd Explosion]\nBASSBEFEHL! BASSBEFEHL!\nHeute zählt hier nur der Pegel!\nBASSBEFEHL! BASSBEFEHL!\nAlle Hände an die Decke!\n\nHEY! HEY! Noch nicht genug!\nHEY! HEY! Der Bass zieht durch!\n\n[Outro – 8 Bars | DJ Friendly]\n[Synth melody filters down, kick and bass stay]\n[Male] Ba-ba-Bassbefehl!\n[Crowd] MEHR! MEHR!\n[Male] Wer geht jetzt heim?\n[Crowd] KEINER!\n[Final bass hit]",
+    "structureCues": [
+      "Intro – 16 Bars | Instrumental",
+      "Filtered rolling bass, dry kick, claps, distant crowd",
+      "Male – Deep, confident shouts",
+      "Crowd",
+      "Build – 8 Bars",
+      "Rising synth, snare rolls, bass filter opens",
+      "Opening Drop – 16 Bars | Instrumental",
+      "Thunderous four-on-the-floor kick, rolling sub bass"
+    ],
+    "settings": {
+      "modelVersion": "V6",
+      "engineName": "chirp-hawk",
+      "isMaxMode": true,
+      "voxRenderMode": "strict",
+      "styleWeight": 0.88,
+      "weirdnessConstraint": 0.28,
+      "augCreativity": 1,
+      "makeInstrumental": false,
+      "deliveryEncoding": "m4a-opus",
+      "createdAt": "2026-11-17"
+    },
+    "coverUrl": "https://cdn2.suno.ai/image_large_5b5bc388-ee63-42e1-a9e1-4c42210596a1.jpeg",
+    "thumbUrl": "https://cdn2.suno.ai/image_5b5bc388-ee63-42e1-a9e1-4c42210596a1.jpeg",
+    "audioUrl": "https://cdn1.suno.ai/5b5bc388-ee63-42e1-a9e1-4c42210596a1.mp4",
+    "videoUrl": "https://cdn1.suno.ai/5b5bc388-ee63-42e1-a9e1-4c42210596a1.mp4",
+    "sunoUrl": "https://suno.com/song/5b5bc388-ee63-42e1-a9e1-4c42210596a1",
+    "embedUrl": "https://suno.com/embed/5b5bc388-ee63-42e1-a9e1-4c42210596a1"
+  },
+  {
+    "id": "1174ca90-73ca-4b5c-b3d2-c0d06f0676a4",
+    "number": "002",
     "title": "TEMBLAZO",
     "bpm": 132,
     "language": "DE",
-    "playCount": 3,
+    "playCount": 4,
     "upvoteCount": 0,
     "durationSeconds": 344,
     "duration": "5:44",
@@ -67,11 +112,11 @@ export const TRACKS = [
   },
   {
     "id": "d89d5635-00c6-4c67-bfc5-20a3467bfcfb",
-    "number": "002",
+    "number": "003",
     "title": "TURBOLÉ",
     "bpm": 132,
     "language": "DE",
-    "playCount": 5,
+    "playCount": 6,
     "upvoteCount": 0,
     "durationSeconds": 283,
     "duration": "4:43",
@@ -112,7 +157,7 @@ export const TRACKS = [
   },
   {
     "id": "67015853-a4dc-4fc7-b043-6f2f92a5dbf2",
-    "number": "003",
+    "number": "004",
     "title": "CARAMBASSA",
     "bpm": 132,
     "language": "DE",
@@ -157,7 +202,7 @@ export const TRACKS = [
   },
   {
     "id": "4123d846-16da-4c1a-8754-b22adcb38263",
-    "number": "004",
+    "number": "005",
     "title": "THERE YOU GO",
     "bpm": 92,
     "language": "EN",
@@ -202,7 +247,7 @@ export const TRACKS = [
   },
   {
     "id": "918f51ab-16be-448f-af3f-8cf88fc49c69",
-    "number": "005",
+    "number": "006",
     "title": "NOBODY KNOWS",
     "bpm": 92,
     "language": "EN",
@@ -247,7 +292,7 @@ export const TRACKS = [
   },
   {
     "id": "9801a0ec-9079-461f-aa11-36e46a8bf7d2",
-    "number": "006",
+    "number": "007",
     "title": "NACHT AUF ANSCHLAG",
     "bpm": 130,
     "language": "DE",
@@ -292,7 +337,7 @@ export const TRACKS = [
   },
   {
     "id": "fd59dae4-1bfc-4eeb-8b95-cc723d43b15f",
-    "number": "007",
+    "number": "008",
     "title": "BLOOM AFTER DARK",
     "bpm": 127,
     "language": "EN",
@@ -337,7 +382,7 @@ export const TRACKS = [
   },
   {
     "id": "ce7b4b5a-c243-47a0-bf0a-a2b895f4d203",
-    "number": "008",
+    "number": "009",
     "title": "CLAVE DE FUEGO",
     "bpm": 127,
     "language": "ES",
@@ -382,7 +427,7 @@ export const TRACKS = [
   },
   {
     "id": "7339155b-e7a7-4b26-9bdb-e0cd1a161dd1",
-    "number": "009",
+    "number": "010",
     "title": "NEÓN EN LA PIEL",
     "bpm": 128,
     "language": "ES",
@@ -427,7 +472,7 @@ export const TRACKS = [
   },
   {
     "id": "e3092aac-4a00-4be6-a121-5fa6d79a7b0c",
-    "number": "010",
+    "number": "011",
     "title": "VUELTA MAGNÉTICA",
     "bpm": 126,
     "language": "ES",
@@ -472,7 +517,7 @@ export const TRACKS = [
   },
   {
     "id": "d39b537f-73d0-4189-8495-998897d22fca",
-    "number": "011",
+    "number": "012",
     "title": "PÉGATE AL BAJO",
     "bpm": 126,
     "language": "ES",
@@ -517,7 +562,7 @@ export const TRACKS = [
   },
   {
     "id": "708787a4-18e8-4c29-8423-0488b6e32c67",
-    "number": "012",
+    "number": "013",
     "title": "OFFBEAT KISS",
     "bpm": 128,
     "language": "EN",
@@ -562,7 +607,7 @@ export const TRACKS = [
   },
   {
     "id": "5f4f77df-d8b4-494c-94fb-8815060d6a0a",
-    "number": "013",
+    "number": "014",
     "title": "PULL THE SUN DOWN",
     "bpm": 127,
     "language": "EN",
@@ -607,7 +652,7 @@ export const TRACKS = [
   },
   {
     "id": "dd7fc209-dfa1-4376-81c3-04c92d904d81",
-    "number": "014",
+    "number": "015",
     "title": "ELECTRIC COASTLINE",
     "bpm": 128,
     "language": "EN",
@@ -652,7 +697,7 @@ export const TRACKS = [
   },
   {
     "id": "16866075-cf71-4d7e-8c01-cd8bf89d0540",
-    "number": "015",
+    "number": "016",
     "title": "MANGO AFTERHOURS",
     "bpm": 127,
     "language": "EN",
@@ -697,7 +742,7 @@ export const TRACKS = [
   },
   {
     "id": "e62c69a8-abd1-452f-b3a0-5b88c62249e3",
-    "number": "016",
+    "number": "017",
     "title": "TIDAL SPARK",
     "bpm": 126,
     "language": "EN",
@@ -742,7 +787,7 @@ export const TRACKS = [
   },
   {
     "id": "330d4765-ec65-4fcd-b22c-86c9e1021f72",
-    "number": "017",
+    "number": "018",
     "title": "SALT IN THE SPEAKERS",
     "bpm": 128,
     "language": "EN",
@@ -787,7 +832,7 @@ export const TRACKS = [
   },
   {
     "id": "f6a4edff-d85e-4760-9855-35476c9ec85d",
-    "number": "018",
+    "number": "019",
     "title": "RIPTIDE REPLAY",
     "bpm": 127,
     "language": "EN",
@@ -832,7 +877,7 @@ export const TRACKS = [
   },
   {
     "id": "7d204271-8e72-437f-8913-8f0a1e419a19",
-    "number": "019",
+    "number": "020",
     "title": "WAVES DON'T WAIT",
     "bpm": 126,
     "language": "EN",
@@ -877,7 +922,7 @@ export const TRACKS = [
   },
   {
     "id": "7bdd1278-e086-410d-8557-f6273eadb280",
-    "number": "020",
+    "number": "021",
     "title": "PARADISE IN MOTION",
     "bpm": 126,
     "language": "EN",
@@ -922,7 +967,7 @@ export const TRACKS = [
   },
   {
     "id": "b4797ccc-1afd-4e0a-a71e-74bac8ddef42",
-    "number": "021",
+    "number": "022",
     "title": "PALM SHADOWS",
     "bpm": 125,
     "language": "EN",
@@ -967,7 +1012,7 @@ export const TRACKS = [
   },
   {
     "id": "259d2e43-b099-4b3c-991d-40b109dd07b1",
-    "number": "022",
+    "number": "023",
     "title": "BLUE SKY FEVER",
     "bpm": 124,
     "language": "EN",
@@ -1012,7 +1057,7 @@ export const TRACKS = [
   },
   {
     "id": "53052720-1c0a-44f8-ae87-baf9a1fa527f",
-    "number": "023",
+    "number": "024",
     "title": "GOLDEN CURRENT",
     "bpm": 125,
     "language": "EN",
@@ -1057,7 +1102,7 @@ export const TRACKS = [
   },
   {
     "id": "daa13698-da1b-4acf-b0f5-30a015bb42cb",
-    "number": "024",
+    "number": "025",
     "title": "CATCH THE CURRENT",
     "bpm": 124,
     "language": "EN",
@@ -1102,7 +1147,7 @@ export const TRACKS = [
   },
   {
     "id": "1b97c208-7cf0-47de-9a21-088871578643",
-    "number": "025",
+    "number": "026",
     "title": "TANGERINE RADIO",
     "bpm": 128,
     "language": "EN",
@@ -1147,7 +1192,7 @@ export const TRACKS = [
   },
   {
     "id": "1c8e74e5-d00f-4921-ada7-3b31a4217bc2",
-    "number": "026",
+    "number": "027",
     "title": "VELVET HEAT",
     "bpm": 127,
     "language": "EN",
@@ -1192,7 +1237,7 @@ export const TRACKS = [
   },
   {
     "id": "84f295e0-39cf-40dd-bcb7-65984a2c613b",
-    "number": "027",
+    "number": "028",
     "title": "SALTWATER SIGNAL",
     "bpm": 125,
     "language": "EN",
@@ -1237,7 +1282,7 @@ export const TRACKS = [
   },
   {
     "id": "b54b57bf-8250-4ba8-8b2a-34e99e1c489f",
-    "number": "028",
+    "number": "029",
     "title": "HIGH TIDE HEARTBEAT",
     "bpm": 124,
     "language": "EN",
@@ -1282,7 +1327,7 @@ export const TRACKS = [
   },
   {
     "id": "6ae9fdec-243c-4f5c-9792-de2f319ccc56",
-    "number": "029",
+    "number": "030",
     "title": "TURN THE SKY PINK",
     "bpm": 112,
     "language": "EN",
@@ -1327,7 +1372,7 @@ export const TRACKS = [
   },
   {
     "id": "ee83dae4-ee9a-4f4e-9c55-17a9c29a48e0",
-    "number": "030",
+    "number": "031",
     "title": "SLOW MOTION MAGIC",
     "bpm": 112,
     "language": "EN",
@@ -1372,7 +1417,7 @@ export const TRACKS = [
   },
   {
     "id": "957a5746-4acb-4f00-8944-8da19806023e",
-    "number": "031",
+    "number": "032",
     "title": "HONEY ON THE BEAT",
     "bpm": 112,
     "language": "EN",
@@ -1417,7 +1462,7 @@ export const TRACKS = [
   },
   {
     "id": "6228dc94-728c-43a1-a403-bff152a29c11",
-    "number": "032",
+    "number": "033",
     "title": "TAKE ME THERE AGAIN",
     "bpm": 112,
     "language": "EN",
@@ -1462,7 +1507,7 @@ export const TRACKS = [
   },
   {
     "id": "912762da-991c-4dec-84f5-9db4def476e8",
-    "number": "033",
+    "number": "034",
     "title": "STAY IN THE GLOW",
     "bpm": 112,
     "language": "EN",
@@ -1507,7 +1552,7 @@ export const TRACKS = [
   },
   {
     "id": "2191d071-ecb4-4978-8c4c-bff51ab09d91",
-    "number": "034",
+    "number": "035",
     "title": "SUNLIGHT ON REPEAT",
     "bpm": 112,
     "language": "EN",
@@ -1552,7 +1597,7 @@ export const TRACKS = [
   },
   {
     "id": "c7d85073-0a3d-4119-b6c1-46eb7e30a5df",
-    "number": "035",
+    "number": "036",
     "title": "TURN IT LOOSE",
     "bpm": 92,
     "language": "EN",
@@ -1597,7 +1642,7 @@ export const TRACKS = [
   },
   {
     "id": "101479c7-7eb9-4a4d-b554-c6759eba31b7",
-    "number": "036",
+    "number": "037",
     "title": "BEAT DON'T LIE",
     "bpm": 92,
     "language": "EN",
@@ -1642,7 +1687,7 @@ export const TRACKS = [
   },
   {
     "id": "4d902aea-5975-404f-9e7d-3f9f894370e5",
-    "number": "037",
+    "number": "038",
     "title": "NO WARNING",
     "bpm": 92,
     "language": "EN",
@@ -1687,7 +1732,7 @@ export const TRACKS = [
   },
   {
     "id": "3df7b678-d05c-4c5b-a3b5-1d9feef70e06",
-    "number": "038",
+    "number": "039",
     "title": "LOUD ON PURPOSE",
     "bpm": 92,
     "language": "EN",
@@ -1732,7 +1777,7 @@ export const TRACKS = [
   },
   {
     "id": "dd45bd89-431c-455c-b2fb-72a79f3e49dd",
-    "number": "039",
+    "number": "040",
     "title": "FULL CONTACT",
     "bpm": 92,
     "language": "ES",
@@ -1777,7 +1822,7 @@ export const TRACKS = [
   },
   {
     "id": "73c0e00e-f5f5-4060-9ed7-1b582a3b3dab",
-    "number": "040",
+    "number": "041",
     "title": "MAKE SOME ROOM",
     "bpm": 92,
     "language": "EN",
@@ -1822,7 +1867,7 @@ export const TRACKS = [
   },
   {
     "id": "75cceceb-f9e9-4f8e-9dc0-83f318b46dde",
-    "number": "041",
+    "number": "042",
     "title": "TAKE ME OVER",
     "bpm": 92,
     "language": "EN",
@@ -1867,7 +1912,7 @@ export const TRACKS = [
   },
   {
     "id": "55d762e5-7e84-455f-8b46-fe751187ce96",
-    "number": "042",
+    "number": "043",
     "title": "LIGHTS OUT LOUD",
     "bpm": 92,
     "language": "EN",
@@ -1912,7 +1957,7 @@ export const TRACKS = [
   },
   {
     "id": "53c24627-9cbd-4c54-a198-fe19d2ddfa38",
-    "number": "043",
+    "number": "044",
     "title": "PRESSURE ON",
     "bpm": 92,
     "language": "EN",
@@ -1957,7 +2002,7 @@ export const TRACKS = [
   },
   {
     "id": "8f2eee15-ca10-478e-92d6-68b59077bc28",
-    "number": "044",
+    "number": "045",
     "title": "JUST MY LUCK",
     "bpm": 92,
     "language": "EN",
@@ -2002,7 +2047,7 @@ export const TRACKS = [
   },
   {
     "id": "59c623d1-3075-456d-8099-a7570ffc88e0",
-    "number": "045",
+    "number": "046",
     "title": "NO BIG DEAL",
     "bpm": 92,
     "language": "ES",
@@ -2047,7 +2092,7 @@ export const TRACKS = [
   },
   {
     "id": "0043a3a7-65c9-4502-91e9-483c396d31b2",
-    "number": "046",
+    "number": "047",
     "title": "A LITTLE TROUBLE",
     "bpm": 92,
     "language": "EN",
@@ -2092,7 +2137,7 @@ export const TRACKS = [
   },
   {
     "id": "a56382b0-2307-4f99-a229-29a7f2669ac6",
-    "number": "047",
+    "number": "048",
     "title": "DER TAG VERLIERT MICH",
     "bpm": 130,
     "language": "DE",
@@ -2137,7 +2182,7 @@ export const TRACKS = [
   },
   {
     "id": "f02da1d2-f026-4aeb-b700-1f4b785b5145",
-    "number": "048",
+    "number": "049",
     "title": "FREQUENZFIEBER",
     "bpm": 130,
     "language": "DE",
@@ -2182,7 +2227,7 @@ export const TRACKS = [
   },
   {
     "id": "34f4caa0-d62f-4533-932e-96ebce324248",
-    "number": "049",
+    "number": "050",
     "title": "BASS AN, WELT AUS",
     "bpm": 126,
     "language": "DE",
@@ -2227,7 +2272,7 @@ export const TRACKS = [
   },
   {
     "id": "6b67b764-9257-4d2b-8b1b-161a0134dff4",
-    "number": "050",
+    "number": "051",
     "title": "KEIN ZURÜCKSPULEN",
     "bpm": 126,
     "language": "DE",
@@ -2272,11 +2317,11 @@ export const TRACKS = [
   },
   {
     "id": "3a3c3814-4c0c-4eb0-95dd-8423512c3d93",
-    "number": "051",
+    "number": "052",
     "title": "LICHTER AUF FLUCHT",
     "bpm": 126,
     "language": "DE",
-    "playCount": 6,
+    "playCount": 7,
     "upvoteCount": 0,
     "durationSeconds": 286,
     "duration": "4:46",
@@ -2317,7 +2362,7 @@ export const TRACKS = [
   },
   {
     "id": "e2e89443-52fb-40e3-8737-883c866d48f5",
-    "number": "052",
+    "number": "053",
     "title": "ALLES AUF ANFANG",
     "bpm": 126,
     "language": "DE",
@@ -2362,7 +2407,7 @@ export const TRACKS = [
   },
   {
     "id": "f3bc61fb-e985-4bed-bde4-a5a89dc065b4",
-    "number": "053",
+    "number": "054",
     "title": "ZIGAZÚ",
     "bpm": 131,
     "language": "DE",
@@ -2407,7 +2452,7 @@ export const TRACKS = [
   },
   {
     "id": "2144e2ec-9391-4f35-ab8c-152006ef381b",
-    "number": "054",
+    "number": "055",
     "title": "TRAKATRÓN",
     "bpm": 132,
     "language": "DE",
@@ -2452,7 +2497,7 @@ export const TRACKS = [
   },
   {
     "id": "65751c78-98a4-4456-98d5-8fcb34024691",
-    "number": "055",
+    "number": "056",
     "title": "BUMBALÉ",
     "bpm": 130,
     "language": "DE",
@@ -2497,7 +2542,7 @@ export const TRACKS = [
   },
   {
     "id": "da4f2689-c2b5-48af-af51-9d34ec39bd1f",
-    "number": "056",
+    "number": "057",
     "title": "KRAWALLITO",
     "bpm": 130,
     "language": "DE",
@@ -2542,7 +2587,7 @@ export const TRACKS = [
   },
   {
     "id": "78949c76-05a8-4be4-a318-a05471f5602d",
-    "number": "057",
+    "number": "058",
     "title": "FUEGO – NOCH EINMAL",
     "bpm": 128,
     "language": "DE",
@@ -2587,7 +2632,7 @@ export const TRACKS = [
   },
   {
     "id": "6a20ae19-4bd2-4489-8880-e0dc5643fed4",
-    "number": "058",
+    "number": "059",
     "title": "VOLLGAS – DALE",
     "bpm": 128,
     "language": "DE",
@@ -2632,7 +2677,7 @@ export const TRACKS = [
   },
   {
     "id": "1766b840-8554-4b79-a6b4-77fbf21c6e3e",
-    "number": "059",
+    "number": "060",
     "title": "THAT LITTLE THING",
     "bpm": 92,
     "language": "EN",
@@ -2677,7 +2722,7 @@ export const TRACKS = [
   },
   {
     "id": "da27e146-a919-4254-92a3-b0a566bc3cd8",
-    "number": "060",
+    "number": "061",
     "title": "EASY DOES IT",
     "bpm": 92,
     "language": "EN",
@@ -2722,7 +2767,7 @@ export const TRACKS = [
   },
   {
     "id": "9d6f4214-c497-4ba5-a69d-9b2d6068e457",
-    "number": "061",
+    "number": "062",
     "title": "GIMME THAT",
     "bpm": 92,
     "language": "EN",
@@ -2767,7 +2812,7 @@ export const TRACKS = [
   },
   {
     "id": "5ddea393-0417-459b-b397-ba4d71c89184",
-    "number": "062",
+    "number": "063",
     "title": "CLICK LIKE THAT",
     "bpm": 92,
     "language": "EN",
@@ -2812,7 +2857,7 @@ export const TRACKS = [
   },
   {
     "id": "89b7da6d-88a9-4f95-8dbd-e32e0cc4eb80",
-    "number": "063",
+    "number": "064",
     "title": "JUST ENOUGH",
     "bpm": 92,
     "language": "EN",
@@ -2857,7 +2902,7 @@ export const TRACKS = [
   },
   {
     "id": "8d0cbc42-439e-4d7b-b006-ff7c78c6108e",
-    "number": "064",
+    "number": "065",
     "title": "LOOK AT YOU",
     "bpm": 92,
     "language": "EN",
@@ -2902,7 +2947,7 @@ export const TRACKS = [
   },
   {
     "id": "7ea38587-2a5f-421e-9065-d9c7486402a6",
-    "number": "065",
+    "number": "066",
     "title": "RIGHT ON CUE",
     "bpm": 92,
     "language": "EN",
@@ -2947,7 +2992,7 @@ export const TRACKS = [
   },
   {
     "id": "84d4177f-626e-406f-8b8a-c794b64ad0c4",
-    "number": "066",
+    "number": "067",
     "title": "THAT'S THE ONE",
     "bpm": 92,
     "language": "EN",
@@ -2992,7 +3037,7 @@ export const TRACKS = [
   },
   {
     "id": "744c76c1-66c7-462f-86e6-063b35caf4de",
-    "number": "067",
+    "number": "068",
     "title": "DO THAT AGAIN",
     "bpm": 92,
     "language": "EN",
@@ -3037,7 +3082,7 @@ export const TRACKS = [
   },
   {
     "id": "51f1d394-c208-4e61-854a-0b9e3e5fa211",
-    "number": "068",
+    "number": "069",
     "title": "LET IT SLIDE",
     "bpm": 92,
     "language": "EN",
@@ -3082,7 +3127,7 @@ export const TRACKS = [
   },
   {
     "id": "3475e5f9-e30d-4bd8-b761-ec6499313315",
-    "number": "069",
+    "number": "070",
     "title": "SET IT OFF",
     "bpm": 92,
     "language": "EN",
@@ -3127,7 +3172,7 @@ export const TRACKS = [
   },
   {
     "id": "132c505c-f08c-4d9a-8303-d407b2d49ba6",
-    "number": "070",
+    "number": "071",
     "title": "CATCH THAT",
     "bpm": 92,
     "language": "EN",
@@ -3172,7 +3217,7 @@ export const TRACKS = [
   },
   {
     "id": "4851a605-4064-425f-8d2c-21af1986903f",
-    "number": "071",
+    "number": "072",
     "title": "TOO GOOD",
     "bpm": 92,
     "language": "EN",
@@ -3217,7 +3262,7 @@ export const TRACKS = [
   },
   {
     "id": "a2eb1120-0aed-45ea-b450-c0b77a81011e",
-    "number": "072",
+    "number": "073",
     "title": "CAN'T SIT STILL",
     "bpm": 92,
     "language": "EN",
@@ -3262,7 +3307,7 @@ export const TRACKS = [
   },
   {
     "id": "d9fdd7f2-4553-4bc9-8c87-fb7463b04faf",
-    "number": "073",
+    "number": "074",
     "title": "JUST A TOUCH",
     "bpm": 92,
     "language": "EN",
@@ -3307,7 +3352,7 @@ export const TRACKS = [
   },
   {
     "id": "21d00c99-40b5-44a1-be9f-f07b4c069016",
-    "number": "074",
+    "number": "075",
     "title": "LOW-KEY LOUD",
     "bpm": 92,
     "language": "EN",
@@ -3352,7 +3397,7 @@ export const TRACKS = [
   },
   {
     "id": "4fc81b7e-4268-42db-816d-d49db1d16b55",
-    "number": "075",
+    "number": "076",
     "title": "SWEET SPOT",
     "bpm": 92,
     "language": "EN",
@@ -3397,7 +3442,7 @@ export const TRACKS = [
   },
   {
     "id": "c3bbd606-b2de-4a71-91c8-90acaa961a2f",
-    "number": "076",
+    "number": "077",
     "title": "NEED THAT",
     "bpm": 92,
     "language": "EN",
@@ -3442,7 +3487,7 @@ export const TRACKS = [
   },
   {
     "id": "1bf86f3f-2c70-476b-a366-5f9021b16715",
-    "number": "077",
+    "number": "078",
     "title": "SAY LESS",
     "bpm": 92,
     "language": "EN",
@@ -3487,7 +3532,7 @@ export const TRACKS = [
   },
   {
     "id": "a291b655-0791-44d1-95de-4ce496ad697c",
-    "number": "078",
+    "number": "079",
     "title": "WAIT A MINUTE",
     "bpm": 92,
     "language": "EN",
@@ -3532,7 +3577,7 @@ export const TRACKS = [
   },
   {
     "id": "e18d25e6-9000-4c87-8dc0-36f04e2ca33e",
-    "number": "079",
+    "number": "080",
     "title": "DON'T TOUCH THAT",
     "bpm": 92,
     "language": "EN",
@@ -3577,7 +3622,7 @@ export const TRACKS = [
   },
   {
     "id": "c2967c5c-3a75-4cde-9fce-112ab2094652",
-    "number": "080",
+    "number": "081",
     "title": "KEEP IT COMING",
     "bpm": 94,
     "language": "EN",
@@ -3622,7 +3667,7 @@ export const TRACKS = [
   },
   {
     "id": "33cca737-ed58-46a8-b3f7-18fc378096a7",
-    "number": "081",
+    "number": "082",
     "title": "MAKE IT BUMP",
     "bpm": 92,
     "language": "EN",
@@ -3667,7 +3712,7 @@ export const TRACKS = [
   },
   {
     "id": "f877c0a1-fcde-4803-b42e-51912efe604a",
-    "number": "082",
+    "number": "083",
     "title": "LET IT ROLL",
     "bpm": 92,
     "language": "EN",
@@ -3712,7 +3757,7 @@ export const TRACKS = [
   },
   {
     "id": "830d9fcd-7076-4aec-ad88-5cdb145e6851",
-    "number": "083",
+    "number": "084",
     "title": "GOT ME LIKE THAT",
     "bpm": 92,
     "language": "EN",
@@ -3757,7 +3802,7 @@ export const TRACKS = [
   },
   {
     "id": "aa1e196d-fef5-4b67-8e8d-2745486073e7",
-    "number": "084",
+    "number": "085",
     "title": "COME AROUND",
     "bpm": 92,
     "language": "EN",
@@ -3802,7 +3847,7 @@ export const TRACKS = [
   },
   {
     "id": "54b663d8-4b6c-4623-84a4-96da6afbda8f",
-    "number": "085",
+    "number": "086",
     "title": "PLAY THAT PART",
     "bpm": 92,
     "language": "EN",
@@ -3847,7 +3892,7 @@ export const TRACKS = [
   },
   {
     "id": "ff973fb8-f9ef-4350-8772-2f7de5686d11",
-    "number": "086",
+    "number": "087",
     "title": "IN MY HEAD",
     "bpm": 92,
     "language": "EN",
@@ -3892,7 +3937,7 @@ export const TRACKS = [
   },
   {
     "id": "9697edc6-3ee7-4e1f-88c5-1a9d6ba7879a",
-    "number": "087",
+    "number": "088",
     "title": "STAY A WHILE",
     "bpm": 92,
     "language": "EN",
@@ -3937,7 +3982,7 @@ export const TRACKS = [
   },
   {
     "id": "f91320c5-9488-484b-813c-c768d6de3c25",
-    "number": "088",
+    "number": "089",
     "title": "JUST LIKE THAT",
     "bpm": 92,
     "language": "EN",
@@ -3982,7 +4027,7 @@ export const TRACKS = [
   },
   {
     "id": "9254c9e6-b0b3-43ed-84ed-b2ee9affc197",
-    "number": "089",
+    "number": "090",
     "title": "PULL ME BACK",
     "bpm": 92,
     "language": "EN",
@@ -4027,7 +4072,7 @@ export const TRACKS = [
   },
   {
     "id": "7735c1b5-c6b3-44e5-ac8c-b953d046391f",
-    "number": "090",
+    "number": "091",
     "title": "BAD HABIT",
     "bpm": 92,
     "language": "EN",
@@ -4072,7 +4117,7 @@ export const TRACKS = [
   },
   {
     "id": "6468d229-ac45-40d6-b8d3-0900d0ed745d",
-    "number": "091",
+    "number": "092",
     "title": "RIGHT THERE",
     "bpm": 92,
     "language": "EN",
@@ -4117,7 +4162,7 @@ export const TRACKS = [
   },
   {
     "id": "62f94a72-1a26-49de-b470-f2bfe9adae2f",
-    "number": "092",
+    "number": "093",
     "title": "TIL THE MORNING LIGHT",
     "bpm": 90,
     "language": "EN",
@@ -4162,7 +4207,7 @@ export const TRACKS = [
   },
   {
     "id": "e5ba8a78-78b9-4182-ac4c-5b9b118afe71",
-    "number": "093",
+    "number": "094",
     "title": "Völlig aus der Bahn",
     "bpm": 135,
     "language": "DE",
@@ -4202,7 +4247,7 @@ export const TRACKS = [
   },
   {
     "id": "4393a0f4-759c-43be-b74f-6953bb4573d0",
-    "number": "094",
+    "number": "095",
     "title": "REDLINE MODE",
     "bpm": 90,
     "language": "EN",
@@ -4247,7 +4292,7 @@ export const TRACKS = [
   },
   {
     "id": "507d5808-bc0f-45b5-be43-fd9b6c676f2d",
-    "number": "095",
+    "number": "096",
     "title": "LOVE THAT LOW",
     "bpm": 92,
     "language": "EN",
@@ -4292,7 +4337,7 @@ export const TRACKS = [
   },
   {
     "id": "f8380093-8054-468f-be7b-b9bde27654b6",
-    "number": "096",
+    "number": "097",
     "title": "I KNOW THAT BASSLINE",
     "bpm": 90,
     "language": "EN",
@@ -4337,7 +4382,7 @@ export const TRACKS = [
   },
   {
     "id": "83616cb4-9074-4964-ac27-b09726b384be",
-    "number": "097",
+    "number": "098",
     "title": "KEEP IT ROLLING",
     "bpm": 90,
     "language": "EN",
@@ -4382,7 +4427,7 @@ export const TRACKS = [
   },
   {
     "id": "a909b7ce-1255-4110-8fda-2c9ccae0f64c",
-    "number": "098",
+    "number": "099",
     "title": "LET IT BANG",
     "bpm": 90,
     "language": "EN",
@@ -4427,7 +4472,7 @@ export const TRACKS = [
   },
   {
     "id": "529b1dff-b1fa-48cb-aa42-04baed430967",
-    "number": "099",
+    "number": "100",
     "title": "DOWN THEN UP",
     "bpm": 90,
     "language": "EN",
@@ -4472,7 +4517,7 @@ export const TRACKS = [
   },
   {
     "id": "b8b901e7-1e22-4236-b166-c6f2e8765a61",
-    "number": "100",
+    "number": "101",
     "title": "HIT IT TWICE",
     "bpm": 90,
     "language": "EN",
@@ -4517,7 +4562,7 @@ export const TRACKS = [
   },
   {
     "id": "f5bd4177-c96a-444f-9033-1e0396595f23",
-    "number": "101",
+    "number": "102",
     "title": "RATTLE THE ROOM",
     "bpm": 90,
     "language": "EN",
@@ -4562,7 +4607,7 @@ export const TRACKS = [
   },
   {
     "id": "83abab37-461b-4223-af6b-9c56d55d2a43",
-    "number": "102",
+    "number": "103",
     "title": "GIVE IT BACK LOUDER",
     "bpm": 90,
     "language": "EN",
@@ -4607,7 +4652,7 @@ export const TRACKS = [
   },
   {
     "id": "614294c9-e099-425d-8e1b-421fed86a083",
-    "number": "103",
+    "number": "104",
     "title": "FADE THE CITY",
     "bpm": 90,
     "language": "EN",
@@ -4652,7 +4697,7 @@ export const TRACKS = [
   },
   {
     "id": "d89ded0f-8baa-4817-8f55-528f4ecb209d",
-    "number": "104",
+    "number": "105",
     "title": "FEEL IT FOREVER",
     "bpm": 90,
     "language": "EN",
@@ -4697,7 +4742,7 @@ export const TRACKS = [
   },
   {
     "id": "60bada4e-4a64-4223-96c1-4b61c2cdb4df",
-    "number": "105",
+    "number": "106",
     "title": "LOUDER THAN THE NIGHT",
     "bpm": 90,
     "language": "EN",
@@ -4742,7 +4787,7 @@ export const TRACKS = [
   },
   {
     "id": "98f7c7d0-b66f-49f6-8913-0696047b15ba",
-    "number": "106",
+    "number": "107",
     "title": "MIDNIGHT ELECTRIC",
     "bpm": 90,
     "language": "EN",
@@ -4787,7 +4832,7 @@ export const TRACKS = [
   },
   {
     "id": "a8a8775a-1e27-44ba-a2c6-38543cd8689c",
-    "number": "107",
+    "number": "108",
     "title": "BORN FOR THE RUSH",
     "bpm": 90,
     "language": "EN",
@@ -4832,7 +4877,7 @@ export const TRACKS = [
   },
   {
     "id": "2947fd38-acb4-4958-aaf5-b9a7da035308",
-    "number": "108",
+    "number": "109",
     "title": "ONE MORE LEVEL",
     "bpm": 90,
     "language": "EN",
@@ -4877,7 +4922,7 @@ export const TRACKS = [
   },
   {
     "id": "6c9c8e9e-af7d-4acc-a335-961a5f82684e",
-    "number": "109",
+    "number": "110",
     "title": "LIGHTS TO THE SKY",
     "bpm": 90,
     "language": "EN",
@@ -4922,7 +4967,7 @@ export const TRACKS = [
   },
   {
     "id": "ee20ad40-9bf3-4ebd-9157-c95a2f2c2d73",
-    "number": "110",
+    "number": "111",
     "title": "NEVER COMING DOWN",
     "bpm": 90,
     "language": "EN",
@@ -4967,7 +5012,7 @@ export const TRACKS = [
   },
   {
     "id": "650bab8e-50de-4fb1-a7cd-dc055b4f0a43",
-    "number": "111",
+    "number": "112",
     "title": "ALL THE WAY UP",
     "bpm": 90,
     "language": "EN",
@@ -5012,7 +5057,7 @@ export const TRACKS = [
   },
   {
     "id": "35c40728-8bde-4dbf-8723-2afbb68e386e",
-    "number": "112",
+    "number": "113",
     "title": "BRING THAT BOOM",
     "bpm": 90,
     "language": "EN",
@@ -5057,7 +5102,7 @@ export const TRACKS = [
   },
   {
     "id": "06ff7a19-1e79-41d1-b13e-905c9141b151",
-    "number": "113",
+    "number": "114",
     "title": "LOCKED IN THE GROOVE",
     "bpm": 90,
     "language": "EN",
@@ -5102,7 +5147,7 @@ export const TRACKS = [
   },
   {
     "id": "18c794bf-f8f8-45f6-a1ea-57cfa98c3380",
-    "number": "114",
+    "number": "115",
     "title": "LET IT KNOCK",
     "bpm": 90,
     "language": "EN",
@@ -5147,7 +5192,7 @@ export const TRACKS = [
   },
   {
     "id": "217c51a1-65b7-49a5-96c5-859d419b7959",
-    "number": "115",
+    "number": "116",
     "title": "RUN IT BACK",
     "bpm": 90,
     "language": "EN",
@@ -5192,7 +5237,7 @@ export const TRACKS = [
   },
   {
     "id": "f22babae-e1fa-47fc-9ec7-a03f7706471e",
-    "number": "116",
+    "number": "117",
     "title": "NO SUNRISE",
     "bpm": 90,
     "language": "EN",
@@ -5237,7 +5282,7 @@ export const TRACKS = [
   },
   {
     "id": "cf6a00b5-cf30-4183-9a63-67048a5d88b3",
-    "number": "117",
+    "number": "118",
     "title": "MAKE IT RUMBLE",
     "bpm": 90,
     "language": "EN",
@@ -5282,7 +5327,7 @@ export const TRACKS = [
   },
   {
     "id": "93ce41f8-88e2-408f-bf89-c70136fd25bf",
-    "number": "118",
+    "number": "119",
     "title": "RED ZONE",
     "bpm": 90,
     "language": "EN",
@@ -5327,7 +5372,7 @@ export const TRACKS = [
   },
   {
     "id": "6b3f2ad3-d414-4829-95ff-00efb62e3b8f",
-    "number": "119",
+    "number": "120",
     "title": "ZONA ROJA",
     "bpm": 90,
     "language": "ES",
@@ -5372,7 +5417,7 @@ export const TRACKS = [
   },
   {
     "id": "5d72f7eb-682d-4963-98ac-fc58628cf0f1",
-    "number": "120",
+    "number": "121",
     "title": "DANGER LEVEL",
     "bpm": 90,
     "language": "EN",
@@ -5417,7 +5462,7 @@ export const TRACKS = [
   },
   {
     "id": "c25bb43b-0188-41ff-91f5-6f887023bad0",
-    "number": "121",
+    "number": "122",
     "title": "NO BRAKES",
     "bpm": 90,
     "language": "EN",
@@ -5462,7 +5507,7 @@ export const TRACKS = [
   },
   {
     "id": "b97fc3de-3768-4004-8343-127926ea6ac2",
-    "number": "122",
+    "number": "123",
     "title": "NIGHTSHIFT",
     "bpm": 90,
     "language": "EN",
@@ -5507,7 +5552,7 @@ export const TRACKS = [
   },
   {
     "id": "f269bad9-dc83-458f-86fc-c5e8cd20ef9a",
-    "number": "123",
+    "number": "124",
     "title": "BASS AUTHORITY",
     "bpm": 90,
     "language": "EN",
@@ -5552,7 +5597,7 @@ export const TRACKS = [
   },
   {
     "id": "2be8ecc7-c11a-40e9-b723-246ecd2ac951",
-    "number": "124",
+    "number": "125",
     "title": "SIREN RUSH",
     "bpm": 90,
     "language": "EN",
@@ -5597,7 +5642,7 @@ export const TRACKS = [
   },
   {
     "id": "eb21c916-d498-4548-96f9-5b94742a59c5",
-    "number": "125",
+    "number": "126",
     "title": "BASSLINE FEVER",
     "bpm": 90,
     "language": "EN",
@@ -5642,7 +5687,7 @@ export const TRACKS = [
   },
   {
     "id": "3997ba9d-e247-4c6e-8e83-d18b9f492fa6",
-    "number": "126",
+    "number": "127",
     "title": "BLACKOUT COMMAND",
     "bpm": 90,
     "language": "EN",
@@ -5687,7 +5732,7 @@ export const TRACKS = [
   },
   {
     "id": "e68135ce-11be-4cc7-bd63-89da4df28aff",
-    "number": "127",
+    "number": "128",
     "title": "HEAT CHECK",
     "bpm": 90,
     "language": "EN",
@@ -5732,7 +5777,7 @@ export const TRACKS = [
   },
   {
     "id": "97548825-af4b-47c6-ac9a-cfa738c2c72d",
-    "number": "128",
+    "number": "129",
     "title": "NO SIGNAL",
     "bpm": 90,
     "language": "EN",
@@ -5777,7 +5822,7 @@ export const TRACKS = [
   },
   {
     "id": "e314e169-6221-47b1-9efe-97582d656531",
-    "number": "129",
+    "number": "130",
     "title": "AFTERSHOCK",
     "bpm": 90,
     "language": "EN",
@@ -5822,7 +5867,7 @@ export const TRACKS = [
   },
   {
     "id": "186021be-58e0-400d-8908-ceda25dc3ced",
-    "number": "130",
+    "number": "131",
     "title": "NO LAST CALL",
     "bpm": 90,
     "language": "EN",
@@ -5867,7 +5912,7 @@ export const TRACKS = [
   },
   {
     "id": "35a64c05-19d4-4526-b829-7f0f0c24ac5f",
-    "number": "131",
+    "number": "132",
     "title": "SYSTEM OVERLOAD",
     "bpm": 90,
     "language": "EN",
@@ -5912,7 +5957,7 @@ export const TRACKS = [
   },
   {
     "id": "ae673687-7ff1-4b51-a637-481dc6e72074",
-    "number": "132",
+    "number": "133",
     "title": "MIDNIGHT REIGN",
     "bpm": 120,
     "language": "EN",
@@ -5957,7 +6002,7 @@ export const TRACKS = [
   },
   {
     "id": "0271c3f7-f7b2-4a84-aa67-569c91bca3f0",
-    "number": "133",
+    "number": "134",
     "title": "MIDNIGHT REIGN",
     "bpm": 120,
     "language": "EN",
@@ -6002,7 +6047,7 @@ export const TRACKS = [
   },
   {
     "id": "3b15e897-e090-4b58-98b5-09849d49264b",
-    "number": "134",
+    "number": "135",
     "title": "VELVET PRESSURE",
     "bpm": 96,
     "language": "EN",
@@ -6047,7 +6092,7 @@ export const TRACKS = [
   },
   {
     "id": "e59bd874-14b7-4d4e-b6b1-8adf84b6bfb8",
-    "number": "135",
+    "number": "136",
     "title": "VENOM MODE",
     "bpm": 100,
     "language": "EN",
@@ -6092,7 +6137,7 @@ export const TRACKS = [
   },
   {
     "id": "ff8c86c3-bda0-48eb-a17b-dc6390f524dd",
-    "number": "136",
+    "number": "137",
     "title": "SNAKE EYES",
     "bpm": 118,
     "language": "EN",
@@ -6137,7 +6182,7 @@ export const TRACKS = [
   },
   {
     "id": "cb56d1d7-0d6f-4654-9428-8e68953f1dca",
-    "number": "137",
+    "number": "138",
     "title": "NO SIGNAL",
     "bpm": 100,
     "language": "EN",
@@ -6182,7 +6227,7 @@ export const TRACKS = [
   },
   {
     "id": "3d05b412-0f78-40bc-86f1-a62f0a1baecf",
-    "number": "138",
+    "number": "139",
     "title": "VELVET VENOM",
     "bpm": 102,
     "language": "EN",
@@ -6227,7 +6272,7 @@ export const TRACKS = [
   },
   {
     "id": "065ad5f4-3909-4904-8d0a-f3b70e466303",
-    "number": "139",
+    "number": "140",
     "title": "NO BRAKES AFTER DARK",
     "bpm": 96,
     "language": "EN",
@@ -6272,7 +6317,7 @@ export const TRACKS = [
   },
   {
     "id": "aa233ef2-b7a9-4e34-9040-c1f76b308908",
-    "number": "140",
+    "number": "141",
     "title": "AFTER HOURS",
     "bpm": 96,
     "language": "EN",
@@ -6317,7 +6362,7 @@ export const TRACKS = [
   },
   {
     "id": "71c1e54f-49fd-4ef3-be6b-947decdefa62",
-    "number": "141",
+    "number": "142",
     "title": "SHAKE THE FLOOR",
     "bpm": 90,
     "language": "EN",
@@ -6362,7 +6407,7 @@ export const TRACKS = [
   },
   {
     "id": "0c21b857-14f7-4fef-a621-45096940adf5",
-    "number": "142",
+    "number": "143",
     "title": "VENOM IN THE VEINS",
     "bpm": 92,
     "language": "EN",
@@ -6407,7 +6452,7 @@ export const TRACKS = [
   },
   {
     "id": "aea4d9ed-77f7-4b37-96a1-8a64065d1332",
-    "number": "143",
+    "number": "144",
     "title": "ZERO MERCY",
     "bpm": 100,
     "language": "EN",
@@ -6452,7 +6497,7 @@ export const TRACKS = [
   },
   {
     "id": "c2eec338-52ac-4801-87ea-fe50acb9161a",
-    "number": "144",
+    "number": "145",
     "title": "BLOOD MOON RISING",
     "bpm": 90,
     "language": "EN",
@@ -6497,7 +6542,7 @@ export const TRACKS = [
   },
   {
     "id": "16080748-f837-4d4c-a2e5-71af682eb22e",
-    "number": "145",
+    "number": "146",
     "title": "HELLBOUND – NO WAY BACK",
     "bpm": 94,
     "language": "EN",
@@ -6542,7 +6587,7 @@ export const TRACKS = [
   },
   {
     "id": "668f09e0-2e78-4b5b-9645-fdd313252809",
-    "number": "146",
+    "number": "147",
     "title": "RISE OF THE SHADOWS",
     "bpm": 94,
     "language": "EN",
@@ -6587,7 +6632,7 @@ export const TRACKS = [
   },
   {
     "id": "542db5b1-b057-4a53-be5b-6c070f65e624",
-    "number": "147",
+    "number": "148",
     "title": "CYBER SHIELD",
     "bpm": 92,
     "language": "EN",
@@ -6632,7 +6677,7 @@ export const TRACKS = [
   },
   {
     "id": "a7af6197-a10d-4773-876b-9c486e041821",
-    "number": "148",
+    "number": "149",
     "title": "Lose Control",
     "bpm": 90,
     "language": "EN",
@@ -6677,7 +6722,7 @@ export const TRACKS = [
   },
   {
     "id": "3c236ad3-497a-4a38-8cd3-3722d19c37f4",
-    "number": "149",
+    "number": "150",
     "title": "Midnight Shadows",
     "bpm": 90,
     "language": "EN",
@@ -6722,7 +6767,7 @@ export const TRACKS = [
   },
   {
     "id": "6bc298eb-d897-40ca-9dab-1f90be5c3720",
-    "number": "150",
+    "number": "151",
     "title": "Keiner bremst uns",
     "bpm": 136,
     "language": "DE",
@@ -6767,7 +6812,7 @@ export const TRACKS = [
   },
   {
     "id": "b1ba62e3-4f09-4d84-bdf6-9cdd4ce70eea",
-    "number": "151",
+    "number": "152",
     "title": "MACH DIE NACHT ZUM TAG",
     "bpm": 130,
     "language": "DE",
@@ -6812,7 +6857,7 @@ export const TRACKS = [
   },
   {
     "id": "d710db97-53d6-40b8-892a-01138973d68d",
-    "number": "152",
+    "number": "153",
     "title": "SITZEN BLEIBEN IST NICHT DRIN!",
     "bpm": 130,
     "language": "DE",
@@ -6857,7 +6902,7 @@ export const TRACKS = [
   },
   {
     "id": "4a94999b-3fa2-4204-b8ca-511182135586",
-    "number": "153",
+    "number": "154",
     "title": "AB JETZT GIBT'S KEIN HALTEN",
     "bpm": 130,
     "language": "DE",
@@ -6902,7 +6947,7 @@ export const TRACKS = [
   },
   {
     "id": "3f65354e-7967-4b2e-b368-f8537581121f",
-    "number": "154",
+    "number": "155",
     "title": "HEUTE FLIEGT DAS DACH WEG!",
     "bpm": 130,
     "language": "DE",
@@ -6947,7 +6992,7 @@ export const TRACKS = [
   },
   {
     "id": "b0afef5b-0098-498d-a5ab-7b259b22c0e6",
-    "number": "155",
+    "number": "156",
     "title": "KOMPLETT AUSSER KONTROLLE",
     "bpm": 130,
     "language": "DE",
@@ -6992,7 +7037,7 @@ export const TRACKS = [
   },
   {
     "id": "bc821099-2099-4fe1-a716-dbab6d06bf26",
-    "number": "156",
+    "number": "157",
     "title": "DIE NACHT HAT KEINE BREMSEN",
     "bpm": 130,
     "language": "DE",
@@ -7037,7 +7082,7 @@ export const TRACKS = [
   },
   {
     "id": "491aeb77-577d-4818-96db-cd89b01bcb12",
-    "number": "157",
+    "number": "158",
     "title": "ZU LAUT FÜR LEISE",
     "bpm": 130,
     "language": "DE",
@@ -7082,7 +7127,7 @@ export const TRACKS = [
   },
   {
     "id": "64fedcb6-37a7-4e45-918b-9b5a7820ccc4",
-    "number": "158",
+    "number": "159",
     "title": "HEUTE WIRD NICHT NACHGEDACHT",
     "bpm": 130,
     "language": "DE",
@@ -7127,7 +7172,7 @@ export const TRACKS = [
   },
   {
     "id": "db6d17ee-a30d-44d3-85b4-fb5002fc05d4",
-    "number": "159",
+    "number": "160",
     "title": "WER HAT HIER AUFGEDREHT?!",
     "bpm": 130,
     "language": "DE",
@@ -7172,7 +7217,7 @@ export const TRACKS = [
   },
   {
     "id": "7a05556b-554a-4574-9ee2-3dd8c785323e",
-    "number": "160",
+    "number": "161",
     "title": "EINER GEHT NOCH REIN",
     "bpm": 130,
     "language": "DE",
@@ -7217,7 +7262,7 @@ export const TRACKS = [
   },
   {
     "id": "d90be90d-a0fc-4e4f-86fd-57a1a4f21903",
-    "number": "161",
+    "number": "162",
     "title": "NOCH LANGE NICHT GENUG",
     "bpm": 130,
     "language": "DE",
@@ -7262,7 +7307,7 @@ export const TRACKS = [
   },
   {
     "id": "9418993b-eadc-4a53-a37c-54209183188a",
-    "number": "162",
+    "number": "163",
     "title": "ALLES AUF ANSCHLAG",
     "bpm": 130,
     "language": "DE",
@@ -7307,7 +7352,7 @@ export const TRACKS = [
   },
   {
     "id": "23f677da-8783-4cf7-a97a-99c91d1e564c",
-    "number": "163",
+    "number": "164",
     "title": "KEIN MORGEN",
     "bpm": 130,
     "language": "DE",
@@ -7352,7 +7397,7 @@ export const TRACKS = [
   },
   {
     "id": "dafbfd0d-ee2b-4513-835f-bd28b2b65944",
-    "number": "164",
+    "number": "165",
     "title": "Lass die Anlage brennen",
     "bpm": 130,
     "language": "DE",
@@ -7397,7 +7442,7 @@ export const TRACKS = [
   },
   {
     "id": "dfc41ad6-ffa8-48d7-a3d2-c17ec47060b2",
-    "number": "165",
+    "number": "166",
     "title": "Voller Rausch",
     "bpm": 126,
     "language": "DE",
@@ -7442,7 +7487,7 @@ export const TRACKS = [
   },
   {
     "id": "9e607a33-c0d3-4fcf-b442-78d10f420457",
-    "number": "166",
+    "number": "167",
     "title": "Blick nach vorn",
     "bpm": 126,
     "language": "DE",
@@ -7487,7 +7532,7 @@ export const TRACKS = [
   },
   {
     "id": "3207f514-4a31-408d-a14b-5e446c403fa7",
-    "number": "167",
+    "number": "168",
     "title": "Licht aus, Bass an",
     "bpm": 126,
     "language": "DE",
@@ -7532,7 +7577,7 @@ export const TRACKS = [
   },
   {
     "id": "31937752-f6cd-4533-817e-65c6aab71840",
-    "number": "168",
+    "number": "169",
     "title": "EKSTASE IM CLUB",
     "bpm": 150,
     "language": "DE",
@@ -7572,7 +7617,7 @@ export const TRACKS = [
   },
   {
     "id": "99a5f55b-57b5-404b-84a9-333af535e2c6",
-    "number": "169",
+    "number": "170",
     "title": "EKSTASE IM CLUB",
     "bpm": 150,
     "language": "DE",
@@ -7612,7 +7657,7 @@ export const TRACKS = [
   },
   {
     "id": "97473ce1-6c3e-42ba-b6df-c3da6956a017",
-    "number": "170",
+    "number": "171",
     "title": "Bass im Blut",
     "bpm": 126,
     "language": "DE",
@@ -7657,7 +7702,7 @@ export const TRACKS = [
   },
   {
     "id": "cc7ffa4d-7153-4da8-a3e0-9d9cc8efdcf3",
-    "number": "171",
+    "number": "172",
     "title": "Licht am Horizont",
     "bpm": 128,
     "language": "DE",
@@ -7702,7 +7747,7 @@ export const TRACKS = [
   },
   {
     "id": "98d5b380-bc37-491d-b66b-a4e973350d83",
-    "number": "172",
+    "number": "173",
     "title": "Baila Conmigo",
     "bpm": 122,
     "language": "DE",
@@ -7747,7 +7792,7 @@ export const TRACKS = [
   },
   {
     "id": "d834b7ec-006f-425c-94bb-57560acaf457",
-    "number": "173",
+    "number": "174",
     "title": "NACHT AUF REPEAT",
     "bpm": 126,
     "language": "DE",
@@ -7792,7 +7837,7 @@ export const TRACKS = [
   },
   {
     "id": "5be44c36-4784-446f-84db-b4d6841126f3",
-    "number": "174",
+    "number": "175",
     "title": "Keine Zeit für Morgen",
     "bpm": 132,
     "language": "DE",
@@ -7837,7 +7882,7 @@ export const TRACKS = [
   },
   {
     "id": "4b06cc13-5fde-484c-842c-b0ea17c99960",
-    "number": "175",
+    "number": "176",
     "title": "Loose Control",
     "bpm": 125,
     "language": "EN",
@@ -7881,7 +7926,7 @@ export const TRACKS = [
   },
   {
     "id": "8a927296-4980-43a1-b8a4-c21ecf8102ed",
-    "number": "176",
+    "number": "177",
     "title": "Drop that bass (we own the night)",
     "bpm": 126,
     "language": "EN",
@@ -7925,7 +7970,7 @@ export const TRACKS = [
   },
   {
     "id": "55207891-b046-4401-a683-9a8b754e45f2",
-    "number": "177",
+    "number": "178",
     "title": "Midnight Shadows",
     "bpm": 125,
     "language": "DE",
@@ -7969,7 +8014,7 @@ export const TRACKS = [
   },
   {
     "id": "a099b0da-7429-418b-afb7-ca285a1ee225",
-    "number": "178",
+    "number": "179",
     "title": "FUEGO EN LA NOCHE",
     "bpm": 135,
     "language": "DE",
@@ -8014,7 +8059,7 @@ export const TRACKS = [
   },
   {
     "id": "9ab09b48-a0a4-4eb1-9cd3-82a8ec6bd16c",
-    "number": "179",
+    "number": "180",
     "title": "SOLO CONTIGO – NUR MIT DIR",
     "bpm": 134,
     "language": "DE",
@@ -8059,7 +8104,7 @@ export const TRACKS = [
   },
   {
     "id": "ca945406-c8b3-4fa5-9d31-3db86441c783",
-    "number": "180",
+    "number": "181",
     "title": "BAILA CONMIGO",
     "bpm": 133,
     "language": "DE",
@@ -8104,7 +8149,7 @@ export const TRACKS = [
   },
   {
     "id": "a84f7b88-b897-48c6-b5b7-2801ee8ccb16",
-    "number": "181",
+    "number": "182",
     "title": "SUBE LA PRESIÓN",
     "bpm": 133,
     "language": "ES",
@@ -8149,7 +8194,7 @@ export const TRACKS = [
   },
   {
     "id": "5b6feab9-e9c4-47ef-9f54-c4e3b93b5232",
-    "number": "182",
+    "number": "183",
     "title": "FUEGO TODA LA NOCHE",
     "bpm": 132,
     "language": "ES",
@@ -8194,7 +8239,7 @@ export const TRACKS = [
   },
   {
     "id": "eeb185b7-b347-4393-8b16-0b55075e9c4e",
-    "number": "183",
+    "number": "184",
     "title": "Keine Zeit für Morgen",
     "bpm": 128,
     "language": "DE",
@@ -8239,7 +8284,7 @@ export const TRACKS = [
   },
   {
     "id": "255cdc22-f301-4714-84d3-49e4040826a6",
-    "number": "184",
+    "number": "185",
     "title": "NOCH EINE NACHT",
     "bpm": 128,
     "language": "DE",
@@ -8284,7 +8329,7 @@ export const TRACKS = [
   },
   {
     "id": "42e717b7-6015-4f9f-a4b1-307c69d4aad6",
-    "number": "185",
+    "number": "186",
     "title": "Lichter hinter uns",
     "bpm": 128,
     "language": "ES",
@@ -8329,7 +8374,7 @@ export const TRACKS = [
   },
   {
     "id": "f8c06e96-b05c-4924-ba83-e953055c68c6",
-    "number": "186",
+    "number": "187",
     "title": "Kein Licht bleibt stehen",
     "bpm": 130,
     "language": "DE",
@@ -8374,7 +8419,7 @@ export const TRACKS = [
   },
   {
     "id": "59f0c159-2253-46e2-b9a1-14155a042c75",
-    "number": "187",
+    "number": "188",
     "title": "Alles auf Nacht",
     "bpm": 128,
     "language": "DE",
@@ -8419,7 +8464,7 @@ export const TRACKS = [
   },
   {
     "id": "c8d23eec-c720-4732-85ad-b55566acf71f",
-    "number": "188",
+    "number": "189",
     "title": "Neon im Rückspiegel",
     "bpm": 128,
     "language": "ES",
@@ -8464,7 +8509,7 @@ export const TRACKS = [
   },
   {
     "id": "aadf780a-ce36-4f94-909a-0ff1390e04c8",
-    "number": "189",
+    "number": "190",
     "title": "Alles zieht vorbei",
     "bpm": 128,
     "language": "ES",
@@ -8509,7 +8554,7 @@ export const TRACKS = [
   },
   {
     "id": "161e033e-bb37-4496-af00-ad196804e89d",
-    "number": "190",
+    "number": "191",
     "title": "Bleib im Licht",
     "bpm": 126,
     "language": "ES",
@@ -8554,7 +8599,7 @@ export const TRACKS = [
   },
   {
     "id": "a85d9b55-ade9-454d-837d-c85548a2496b",
-    "number": "191",
+    "number": "192",
     "title": "Nur noch heute",
     "bpm": 126,
     "language": "DE",
@@ -8599,7 +8644,7 @@ export const TRACKS = [
   },
   {
     "id": "af753d14-b97f-441b-8fa9-f120b5b28527",
-    "number": "192",
+    "number": "193",
     "title": "Wir fahren weiter",
     "bpm": 125,
     "language": "DE",
@@ -8644,7 +8689,7 @@ export const TRACKS = [
   },
   {
     "id": "52f99a99-4985-4c73-a879-fbc486030cac",
-    "number": "193",
+    "number": "194",
     "title": "Bis die Stadt erwacht",
     "bpm": 128,
     "language": "ES",
@@ -8689,7 +8734,7 @@ export const TRACKS = [
   },
   {
     "id": "4d6b08d0-9c12-4b8c-9474-84fbbd6e990a",
-    "number": "194",
+    "number": "195",
     "title": "Noch ein letzter Song",
     "bpm": 129,
     "language": "ES",
@@ -8734,7 +8779,7 @@ export const TRACKS = [
   },
   {
     "id": "9d39e69f-cc02-41b4-95e3-21adf9d4511f",
-    "number": "195",
+    "number": "196",
     "title": "Morgen ist egal",
     "bpm": 130,
     "language": "EN",
@@ -8774,7 +8819,7 @@ export const TRACKS = [
   },
   {
     "id": "ae9bc8ba-a182-4268-8ed0-3c87b7d5ae5a",
-    "number": "196",
+    "number": "197",
     "title": "Bis keiner mehr sitzt",
     "bpm": 130,
     "language": "EN",
@@ -8814,7 +8859,7 @@ export const TRACKS = [
   },
   {
     "id": "dcc13fbb-f01b-40a9-bea5-8ac7a92c9f4c",
-    "number": "197",
+    "number": "198",
     "title": "Alles auf laut",
     "bpm": 130,
     "language": "DE",
@@ -8854,7 +8899,7 @@ export const TRACKS = [
   },
   {
     "id": "5c28cb48-a9fe-4381-b068-4137cf8122f1",
-    "number": "198",
+    "number": "199",
     "title": "Noch nicht nach Haus",
     "bpm": 130,
     "language": "DE",
@@ -8894,7 +8939,7 @@ export const TRACKS = [
   },
   {
     "id": "bb463eaa-9f94-43a9-adcf-7ff06bd7b559",
-    "number": "199",
+    "number": "200",
     "title": "Bis morgen zählt nichts",
     "bpm": 128,
     "language": "EN",
@@ -8934,7 +8979,7 @@ export const TRACKS = [
   },
   {
     "id": "6a77d581-7a06-4713-b3ba-9c5344edfa68",
-    "number": "200",
+    "number": "201",
     "title": "Noch eine Runde",
     "bpm": 127,
     "language": "EN",
@@ -8974,7 +9019,7 @@ export const TRACKS = [
   },
   {
     "id": "2826306c-032e-46b7-af93-ebd582f84cc8",
-    "number": "201",
+    "number": "202",
     "title": "Wir sind noch wach",
     "bpm": 131,
     "language": "DE",
@@ -9014,7 +9059,7 @@ export const TRACKS = [
   },
   {
     "id": "9c423df4-bd5c-4340-a683-222845191861",
-    "number": "202",
+    "number": "203",
     "title": "Heute gibt es kein Zurück",
     "bpm": 131,
     "language": "DE",
@@ -9054,7 +9099,7 @@ export const TRACKS = [
   },
   {
     "id": "169b8095-19b0-4511-a0df-b03de9d5ccf5",
-    "number": "203",
+    "number": "204",
     "title": "Keine Pause",
     "bpm": 134,
     "language": "EN",
@@ -9094,7 +9139,7 @@ export const TRACKS = [
   },
   {
     "id": "5f2b1f38-bd48-4463-9e6d-961f7c14c359",
-    "number": "204",
+    "number": "205",
     "title": "Noch einmal Vollgas",
     "bpm": 132,
     "language": "DE",
@@ -9134,7 +9179,7 @@ export const TRACKS = [
   },
   {
     "id": "fadef3e6-de7e-44d0-86bf-238c1d3e7882",
-    "number": "205",
+    "number": "206",
     "title": "Eine Nacht zu viel",
     "bpm": 130,
     "language": "DE",
@@ -9174,7 +9219,7 @@ export const TRACKS = [
   },
   {
     "id": "7dcc55a2-057e-48aa-bb30-a8cdd5c83112",
-    "number": "206",
+    "number": "207",
     "title": "Noch lange nicht genug",
     "bpm": 130,
     "language": "DE",
@@ -9214,7 +9259,7 @@ export const TRACKS = [
   },
   {
     "id": "9e5f462d-eea3-409b-8857-9d0e100b38d9",
-    "number": "207",
+    "number": "208",
     "title": "Bis alles bebt",
     "bpm": 130,
     "language": "EN",
@@ -9254,7 +9299,7 @@ export const TRACKS = [
   },
   {
     "id": "b34a9c29-01ce-42fc-8a1d-ac71db74d365",
-    "number": "208",
+    "number": "209",
     "title": "Alles brennt",
     "bpm": 130,
     "language": "EN",
@@ -9294,7 +9339,7 @@ export const TRACKS = [
   },
   {
     "id": "b73cd352-f2b3-4d50-8b5c-f657814e9ef1",
-    "number": "209",
+    "number": "210",
     "title": "Keine Bremse",
     "bpm": 130,
     "language": "EN",
@@ -9334,7 +9379,7 @@ export const TRACKS = [
   },
   {
     "id": "7f606398-f373-4c52-802c-5dc3c739c6e4",
-    "number": "210",
+    "number": "211",
     "title": "Zu laut für morgen",
     "bpm": 130,
     "language": "EN",
@@ -9374,7 +9419,7 @@ export const TRACKS = [
   },
   {
     "id": "74fe8a88-12b0-4c85-aeea-82933304b959",
-    "number": "211",
+    "number": "212",
     "title": "Kein Morgen",
     "bpm": 130,
     "language": "DE",
@@ -9414,7 +9459,7 @@ export const TRACKS = [
   },
   {
     "id": "17693478-ea60-4eb3-9df6-e3e8b04fdc09",
-    "number": "212",
+    "number": "213",
     "title": "Heute Nacht gehört uns",
     "bpm": 130,
     "language": "DE",
@@ -9454,7 +9499,7 @@ export const TRACKS = [
   },
   {
     "id": "9afcc242-e255-4e2f-8d7d-b76ebda7c4b7",
-    "number": "213",
+    "number": "214",
     "title": "Bis die Sonne wieder kommt",
     "bpm": 130,
     "language": "DE",
@@ -9494,7 +9539,7 @@ export const TRACKS = [
   },
   {
     "id": "3d15fa15-c241-41df-945a-e33136939532",
-    "number": "214",
+    "number": "215",
     "title": "Vollgas durch die Nacht",
     "bpm": 128,
     "language": "DE",
@@ -9539,7 +9584,7 @@ export const TRACKS = [
   },
   {
     "id": "fc6a71d8-669a-431a-9052-95f55b270309",
-    "number": "215",
+    "number": "216",
     "title": "Kopf aus",
     "bpm": 126,
     "language": "DE",
@@ -9589,19 +9634,19 @@ export const WORKFLOW_STEPS = [
     step: "01",
     badge: "STAGE 01 // CHATGPT LYRICS & REGIE-TAGS",
     title: "Songtext & Takt-für-Takt-Dramaturgie aus ChatGPT.",
-    subtitle: "Wähle oben im Studio-Fenster (oder in der Jukebox) einen deiner 215 Songs aus: Du siehst im Studio-Frame sofort die echten ChatGPT-Regieanweisungen (wie [Intro – 16 Bars], [Pre-Chorus Build], [Solo-Marimba Fake Drop] oder [32-Bar Final Drop]) und den Original-Songtext des jeweiligen Tracks.",
+    subtitle: "Wähle oben im Studio-Fenster (oder in der Jukebox) einen deiner 216 Songs aus: Du siehst im Studio-Frame sofort die echten ChatGPT-Regieanweisungen (wie [Intro – 16 Bars], [Pre-Chorus Build], [Solo-Marimba Fake Drop] oder [32-Bar Final Drop]) und den Original-Songtext des jeweiligen Tracks.",
     metrics: [
-      { label: "Gesamtkatalog", value: "Alle 215 Original-Songs" },
-      { label: "Sprachen im Katalog", value: `DE (${64}) • EN (${136}) • ES (${15})` }
+      { label: "Gesamtkatalog", value: "Alle 216 Original-Songs" },
+      { label: "Sprachen im Katalog", value: `DE (${65}) • EN (${136}) • ES (${15})` }
     ]
   },
   {
     step: "02",
     badge: "STAGE 02 // CHATGPT STYLE & NEGATIVE TAGS",
     title: "Positive Style-Prompts & gezielte Ausschlüsse.",
-    subtitle: "Im zweiten Schritt übergibt ChatGPT den exakten klanglichen Fingerabdruck an Suno: BPM, Drum-Programming, Bassline-Charakter, Vocal-Timbre sowie die echten Negative-Tags, damit jeder der 215 Songs kompromisslos im gewünschten Genre sitzt.",
+    subtitle: "Im zweiten Schritt übergibt ChatGPT den exakten klanglichen Fingerabdruck an Suno: BPM, Drum-Programming, Bassline-Charakter, Vocal-Timbre sowie die echten Negative-Tags, damit jeder der 216 Songs kompromisslos im gewünschten Genre sitzt.",
     metrics: [
-      { label: "Style-Definition", value: "Individuell für alle 215 Songs" },
+      { label: "Style-Definition", value: "Individuell für alle 216 Songs" },
       { label: "Negative Filtering", value: "Aktive Genre-Abgrenzung" }
     ]
   },
@@ -9612,7 +9657,7 @@ export const WORKFLOW_STEPS = [
     subtitle: "In Stufe 3 zeigt das Studio-Frame die exakten Suno-Einstellungen des gewählten Liedes: Modell-Generation (bis V6 chirp-hawk), MAX Mode Status, Style Weight, Weirdness Constraint, Creativity-Augmentation und Vocal-Rendering.",
     metrics: [
       { label: "Suno Engine", value: "Bis V6 (chirp-hawk)" },
-      { label: "Audio-Streaming", value: "Alle 215 Songs direkt abspielbar" }
+      { label: "Audio-Streaming", value: "Alle 216 Songs direkt abspielbar" }
     ]
   }
 ];
