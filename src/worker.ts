@@ -9,6 +9,9 @@ interface SunoClip {
   id: string;
   title: string;
   status: string;
+  is_public?: boolean;
+  is_trashed?: boolean;
+  is_hidden?: boolean;
   play_count?: number;
   upvote_count?: number;
   image_url?: string;
@@ -150,8 +153,16 @@ async function fetchLiveTracksFromSuno(): Promise<any[]> {
     if (items.length === 0) break;
 
     for (const item of items) {
-      if (item.content_item && item.content_item.status === "complete") {
-        allClips.push(item.content_item);
+      const clip = item.content_item;
+      // Only include songs that are complete, explicitly public/published by the user, and not trashed or hidden
+      if (
+        clip &&
+        clip.status === "complete" &&
+        clip.is_public === true &&
+        !clip.is_trashed &&
+        !clip.is_hidden
+      ) {
+        allClips.push(clip);
       }
     }
 
@@ -188,13 +199,15 @@ export default {
 
     // Dynamic live Suno tracks endpoint on Cloudflare Edge with Edge Cache
     if (url.pathname === "/api/tracks") {
-      // Check Cloudflare Edge cache first
+      const forceRefresh = url.searchParams.has("refresh") || url.searchParams.has("force");
       const cache = caches.default;
-      const cacheKey = new Request(url.toString(), request);
-      const cachedResponse = await cache.match(cacheKey);
+      const cacheKey = new Request(url.origin + url.pathname, request);
 
-      if (cachedResponse) {
-        return cachedResponse;
+      if (!forceRefresh) {
+        const cachedResponse = await cache.match(cacheKey);
+        if (cachedResponse) {
+          return cachedResponse;
+        }
       }
 
       try {

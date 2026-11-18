@@ -41,8 +41,16 @@ async function fetchAllSunoClips() {
     if (items.length === 0) break;
 
     for (const item of items) {
-      if (item.content_item && item.content_item.status === "complete") {
-        allClips.push(item.content_item);
+      const clip = item.content_item;
+      // Only include songs that are complete, explicitly public/published by the user, and not trashed or hidden
+      if (
+        clip &&
+        clip.status === "complete" &&
+        clip.is_public === true &&
+        !clip.is_trashed &&
+        !clip.is_hidden
+      ) {
+        allClips.push(clip);
       }
     }
 
@@ -227,14 +235,16 @@ export const WORKFLOW_STEPS = [
   // Also update dynamic counts in index.html if present
   if (fs.existsSync(htmlPath)) {
     let html = fs.readFileSync(htmlPath, "utf8");
-    // Replace old 210 with the new total
-    html = html.replace(/210(\s*(?:Songs|Original-Tracks|Tracks|Original-Songs|Lieder))/g, `${total}$1`);
-    html = html.replace(/Alle 210/g, `Alle ${total}`);
-    html = html.replace(/unter 210/gi, `unter ${total}`);
+    // Replace old count with the new total
+    html = html.replace(/(<span class="dyn-song-count">)\d+(<\/span>)/g, `$1${total}$2`);
+    html = html.replace(/(?:210|214)(\s*(?:Songs|Original-Tracks|Tracks|Original-Songs|Lieder))/g, `${total}$1`);
+    html = html.replace(/Alle (?:210|214)/g, `Alle ${total}`);
+    html = html.replace(/unter (?:210|214)/gi, `unter ${total}`);
     html = html.replace(/data-lang-filter="ALL">Alle \(\d+\)/g, `data-lang-filter="ALL">Alle (${total})`);
     html = html.replace(/data-lang-filter="DE">DE 🇩🇪 \(\d+\)/g, `data-lang-filter="DE">DE 🇩🇪 (${de})`);
     html = html.replace(/data-lang-filter="ES">ES 🇪🇸 \(\d+\)/g, `data-lang-filter="ES">ES 🇪🇸 (${es})`);
     html = html.replace(/data-lang-filter="EN">EN 🇬🇧 \(\d+\)/g, `data-lang-filter="EN">EN 🇬🇧 (${en})`);
+    html = html.replace(/\b\d+ DE • \d+ ES • \d+ EN Tracks\b/g, `${de} DE • ${es} ES • ${en} EN Tracks`);
     fs.writeFileSync(htmlPath, html, "utf8");
     console.log(`✅ Updated index.html counts to ${total} Songs (DE: ${de}, ES: ${es}, EN: ${en})`);
   }
