@@ -285,6 +285,28 @@ main, header, footer {
   box-shadow: 0 0 28px rgba(41, 151, 255, 0.6);
 }
 
+.btn-pill-spotify:hover {
+  border-color: rgba(30, 215, 96, 0.6) !important;
+  box-shadow: 0 0 18px rgba(30, 215, 96, 0.4);
+  transform: scale(1.03);
+}
+
+.btn-pill-amazon:hover {
+  border-color: rgba(255, 153, 0, 0.6) !important;
+  box-shadow: 0 0 18px rgba(255, 153, 0, 0.4);
+  transform: scale(1.03);
+}
+
+.btn-spotify-hero:hover {
+  border-color: rgba(30, 215, 96, 0.55) !important;
+  box-shadow: 0 0 30px rgba(30, 215, 96, 0.3) !important;
+}
+
+.btn-amazon-hero:hover {
+  border-color: rgba(255, 153, 0, 0.55) !important;
+  box-shadow: 0 0 30px rgba(255, 153, 0, 0.3) !important;
+}
+
 /* ==========================================
    HERO SECTION (Apple Mac Product Reveal)
    ========================================== */
@@ -1496,6 +1518,9 @@ main, header, footer {
 
 .bento-actions {
   margin-top: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .profile-glass-card {

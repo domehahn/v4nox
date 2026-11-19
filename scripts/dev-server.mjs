@@ -29,6 +29,8 @@ const server = createServer(async (req, res) => {
         artist: "v4nox",
         creator: "Dominik Hahn (@dome_hahn)",
         sunoProfile: "https://suno.com/@dome_hahn",
+        spotifyProfile: "https://open.spotify.com/intl-de/artist/3Qsyrq3U8VNdCQzaEav3mf",
+        amazonMusicProfile: "https://www.amazon.com/music/player/artists/B0HQYFFZ9L/v4nox",
         domain: "v4nox.eu",
         status: "online",
       })
