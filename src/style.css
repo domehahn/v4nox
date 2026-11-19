@@ -85,7 +85,7 @@ main, header, footer {
   top: 0;
   left: 0;
   right: 0;
-  height: calc(72px + env(safe-area-inset-top, 0px));
+  height: calc(58px + env(safe-area-inset-top, 0px));
   padding-top: env(safe-area-inset-top, 0px);
   z-index: 100;
   background: rgba(4, 4, 8, 0.78);
@@ -99,17 +99,17 @@ main, header, footer {
   max-width: 1360px;
   height: 100%;
   margin: 0 auto;
-  padding: 0 36px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 48px;
+  gap: 20px;
 }
 
 .brand-logo {
   display: inline-flex;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
   text-decoration: none;
   color: var(--text-primary);
   transition: transform 0.25s var(--ease-apple);
@@ -122,8 +122,8 @@ main, header, footer {
 
 .brand-emblem-wrap {
   position: relative;
-  width: 38px;
-  height: 38px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -169,7 +169,7 @@ main, header, footer {
 .brand-title-row {
   display: inline-flex;
   align-items: center;
-  font-size: 1.22rem;
+  font-size: 1.15rem;
   font-weight: 800;
   letter-spacing: -0.03em;
 }
@@ -223,9 +223,9 @@ main, header, footer {
 
 .brand-sub-tag {
   font-family: var(--font-mono);
-  font-size: 0.56rem;
+  font-size: 0.52rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   color: var(--text-secondary);
   margin-top: 2px;
 }
@@ -233,15 +233,15 @@ main, header, footer {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 18px;
 }
 
 .nav-link {
   color: var(--text-secondary);
   text-decoration: none;
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   font-weight: 500;
-  padding: 6px 4px;
+  padding: 4px 2px;
   transition: color 0.2s ease;
   background: none;
   border: none;
@@ -257,17 +257,17 @@ main, header, footer {
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
   flex-shrink: 0;
 }
 
 .btn-pill {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 9px 18px;
+  gap: 6px;
+  padding: 6px 13px;
   border-radius: 999px;
-  font-size: 0.82rem;
+  font-size: 0.76rem;
   font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
@@ -313,7 +313,7 @@ main, header, footer {
 .hero-section {
   min-height: 100vh;
   min-height: 100svh;
-  padding-top: calc(76px + env(safe-area-inset-top, 0px) + 24px);
+  padding-top: calc(62px + env(safe-area-inset-top, 0px) + 18px);
   padding-bottom: 60px;
   display: flex;
   flex-direction: column;
@@ -2771,14 +2771,14 @@ main, header, footer {
 
   /* Global Navigation */
   .global-nav {
-    height: calc(62px + env(safe-area-inset-top, 0px));
+    height: calc(52px + env(safe-area-inset-top, 0px));
     padding-top: env(safe-area-inset-top, 0px);
   }
 
   .nav-container {
-    padding: 0 16px;
-    gap: 12px;
-    height: 62px;
+    padding: 0 12px;
+    gap: 8px;
+    height: 52px;
   }
 
   .nav-links {
@@ -2786,33 +2786,37 @@ main, header, footer {
   }
 
   .brand-logo {
-    gap: 10px;
+    gap: 8px;
   }
 
   .brand-emblem-wrap {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
   }
 
   .brand-title-row {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
   }
 
   .brand-sub-tag {
-    font-size: 0.5rem;
+    font-size: 0.46rem;
     letter-spacing: 0.05em;
   }
 
-  .nav-actions .btn-pill {
-    padding: 6px 12px;
-    font-size: 0.74rem;
+  .nav-actions {
     gap: 5px;
+  }
+
+  .nav-actions .btn-pill {
+    padding: 5px 8px;
+    font-size: 0.72rem;
+    gap: 4px;
   }
 
   /* Hero Section */
   .hero-section {
     min-height: auto;
-    padding-top: calc(62px + env(safe-area-inset-top, 0px) + 20px);
+    padding-top: calc(52px + env(safe-area-inset-top, 0px) + 16px);
     padding-bottom: 36px;
   }
 
@@ -3623,6 +3627,16 @@ main, header, footer {
 
   .s-label-full { display: none !important; }
   .s-label-short { display: inline !important; }
+
+  .nav-actions {
+    gap: 4px;
+  }
+
+  .nav-actions .btn-pill {
+    padding: 4px 7px;
+    font-size: 0.68rem;
+    gap: 3px;
+  }
 
   .brand-sub-tag {
     display: none !important;
