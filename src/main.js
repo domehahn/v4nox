@@ -995,7 +995,7 @@ function setupHeroLightning() {
     let currentSet = setA;
 
     function flashOn(alpha = 1.0) {
-      wrap.classList.add("is-flashing");
+      wrap.classList.add("is-active", "is-flashing");
       if (flashOverlay) flashOverlay.style.opacity = String(Math.min(1, alpha * intensity));
     }
 
@@ -1010,6 +1010,7 @@ function setupHeroLightning() {
       strikeTimeoutIds.push(
         setTimeout(() => {
           flashOff();
+          wrap.classList.remove("is-active");
           ctx.clearRect(0, 0, w, h);
         }, 600)
       );
@@ -1042,7 +1043,7 @@ function setupHeroLightning() {
     strikeTimeoutIds.push(
       setTimeout(() => {
         drawTrees(setA, 0.3 * intensity);
-        flashOn(0.25);
+        flashOff();
       }, 165)
     );
 
@@ -1059,7 +1060,7 @@ function setupHeroLightning() {
     strikeTimeoutIds.push(
       setTimeout(() => {
         drawTrees(setB, 0.35 * intensity);
-        flashOn(0.3);
+        flashOff();
       }, 285)
     );
 
@@ -1071,13 +1072,13 @@ function setupHeroLightning() {
       }, 335)
     );
 
-    // Frame 8: Smooth plasma dissipation
+    // Frame 8: Smooth plasma dissipation and return to normal background
     strikeTimeoutIds.push(
       setTimeout(() => {
         flashOff();
         let fadeAlpha = 0.5 * intensity;
         const fadeStart = performance.now();
-        const fadeDuration = 450;
+        const fadeDuration = 400;
 
         function decayStep(now) {
           const elapsed = now - fadeStart;
@@ -1089,6 +1090,8 @@ function setupHeroLightning() {
           } else {
             ctx.clearRect(0, 0, w, h);
             activeAnimationId = null;
+            // Completely return background to normal
+            wrap.classList.remove("is-active", "is-flashing");
           }
         }
         activeAnimationId = requestAnimationFrame(decayStep);
@@ -1096,46 +1099,31 @@ function setupHeroLightning() {
     );
   }
 
-  // Click & Tap Interaction
-  wrap.addEventListener("click", () => {
-    triggerLightningStrike(1.0);
-  });
-
   // Enter / Reload Trigger:
-  // Fire briefly after the page is entered or reloaded
-  setTimeout(() => {
+  // Runs exactly once on page enter or reload. Afterwards, background returns to normal.
+  let hasTriggered = false;
+  function runInitialStrike() {
+    if (hasTriggered) return;
+    hasTriggered = true;
     triggerLightningStrike(1.0);
-  }, 260);
+  }
 
-  // Trigger when headline enters viewport if user starts elsewhere and scrolls up
-  let hasScrolledTriggered = false;
+  setTimeout(runInitialStrike, 250);
+
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && !hasScrolledTriggered) {
-            hasScrolledTriggered = true;
-            setTimeout(() => {
-              triggerLightningStrike(0.9);
-            }, 150);
+          if (entry.isIntersecting) {
+            runInitialStrike();
+            observer.disconnect();
           }
         });
       },
-      { threshold: 0.25 }
+      { threshold: 0.2 }
     );
     observer.observe(wrap);
   }
-
-  // Subtle ambient discharges every 11 seconds (soft, non-distracting distant flash)
-  setInterval(() => {
-    if (document.visibilityState === "visible") {
-      const rect = wrap.getBoundingClientRect();
-      const inView = rect.top < window.innerHeight && rect.bottom > 0;
-      if (inView) {
-        triggerLightningStrike(0.42);
-      }
-    }
-  }, 11000);
 }
 
 /* ========================================================
