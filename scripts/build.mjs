@@ -14,7 +14,7 @@ mkdirSync(resolve(dist, "src"), { recursive: true });
 cpSync(resolve(root, "index.html"), resolve(dist, "index.html"));
 
 // Copy frontend assets from src/ (excluding worker.ts)
-for (const file of ["style.css", "main.js", "tracks.js", "audioEngine.js"]) {
+for (const file of ["style.css", "main.js", "tracks.js", "audioEngine.js", "i18n.js"]) {
   cpSync(resolve(root, "src", file), resolve(dist, "src", file));
 }
 
