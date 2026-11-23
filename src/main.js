@@ -1,5 +1,6 @@
 import { TRACKS, WORKFLOW_STEPS } from "./tracks.js";
 import { SunoAudioEngine } from "./audioEngine.js";
+import { getWorkflowSteps, initI18n, t } from "./i18n.js";
 
 const audioEngine = new SunoAudioEngine();
 let currentTracks = [...TRACKS];
@@ -19,7 +20,7 @@ function buildSettingsHtml(track) {
   const styleWeightPct =
     s.styleWeight !== null && s.styleWeight !== undefined
       ? `${Math.round(s.styleWeight * 100)}% (${s.styleWeight})`
-      : "Auto (Standard V6)";
+      : t("auto");
   const styleWeightWidth =
     s.styleWeight !== null && s.styleWeight !== undefined
       ? Math.round(s.styleWeight * 100)
@@ -28,7 +29,7 @@ function buildSettingsHtml(track) {
   const weirdnessPct =
     s.weirdnessConstraint !== null && s.weirdnessConstraint !== undefined
       ? `${Math.round(s.weirdnessConstraint * 100)}% (${s.weirdnessConstraint})`
-      : "Auto (Standard V6)";
+      : t("auto");
   const weirdnessWidth =
     s.weirdnessConstraint !== null && s.weirdnessConstraint !== undefined
       ? Math.round(s.weirdnessConstraint * 100)
@@ -55,12 +56,12 @@ function buildSettingsHtml(track) {
     </div>
     <div class="setting-meter-card">
       <span class="smc-label">AUG CREATIVITY</span>
-      <span class="smc-val">Level ${augVal} (${augVal === 1 ? "High" : "Focused"})</span>
+      <span class="smc-val">Level ${augVal} (${augVal === 1 ? t("high") : t("focused")})</span>
       <div class="smc-bar"><div class="smc-fill" style="width: ${augWidth}%"></div></div>
     </div>
     <div class="setting-meter-card">
       <span class="smc-label">VOX RENDER MODE</span>
-      <span class="smc-val">${(s.voxRenderMode || "strict").toUpperCase()} (Exakte Lyrics)</span>
+      <span class="smc-val">${(s.voxRenderMode || "strict").toUpperCase()} (${t("exactLyrics")})</span>
       <div class="smc-bar"><div class="smc-fill" style="width: 100%"></div></div>
     </div>
     <div class="setting-meter-card">
@@ -78,7 +79,7 @@ function renderWorkflowSteps() {
   const container = document.getElementById("scrolly-steps-container");
   if (!container) return;
 
-  container.innerHTML = WORKFLOW_STEPS.map(
+  container.innerHTML = getWorkflowSteps(WORKFLOW_STEPS).map(
     (item, idx) => `
     <article class="scrolly-step-card ${idx === 0 ? "is-active" : ""}" data-step-index="${idx}">
       <div class="step-badge-row">
@@ -127,7 +128,7 @@ function updateStudioInspector(track, isPlaying) {
   if (studioTitle) studioTitle.textContent = track.title;
   if (studioMeta) studioMeta.textContent = `${track.bpm} BPM • ${track.language}`;
   if (sidebarPlayLabel) {
-    sidebarPlayLabel.textContent = isPlaying ? "Pause" : "Track abspielen";
+    sidebarPlayLabel.textContent = isPlaying ? t("pause") : t("playTrack");
   }
 
   // Stage 0: Lyrics & Cues
@@ -155,7 +156,7 @@ function updateStudioInspector(track, isPlaying) {
 
   if (s1DisplayTags) s1DisplayTags.textContent = track.displayTags || track.shortStyle;
   if (s1Positive) s1Positive.textContent = track.stylePrompt;
-  if (s1Negative) s1Negative.textContent = track.negativeTags || "Keine Ausschlüsse";
+  if (s1Negative) s1Negative.textContent = track.negativeTags || t("noExclusions");
 
   // Stage 2: Exact Suno V6 Settings & Control Sliders
   const s2ModelTag = document.getElementById("studio-s2-model-tag");
@@ -222,7 +223,7 @@ function renderJukeboxPlaylist() {
 
   const filtered = getFilteredTracks();
   if (filtered.length === 0) {
-    listEl.innerHTML = `<div style="padding: 24px; color: var(--text-secondary); font-size: 0.85rem;">Keine Songs für diesen Filter gefunden.</div>`;
+    listEl.innerHTML = `<div style="padding: 24px; color: var(--text-secondary); font-size: 0.85rem;">${t("noSongs")}</div>`;
     return;
   }
 
@@ -258,7 +259,7 @@ function renderJukeboxPlaylist() {
             target="_blank"
             rel="noopener noreferrer"
             class="jbi-suno-link"
-            title="${track.title} direkt auf Suno öffnen"
+            title="${track.title}: ${t("openOnSuno")}"
             onclick="event.stopPropagation();"
           >
             <span>Suno</span>
@@ -319,7 +320,7 @@ function updateJukeboxInspector(track, isPlaying) {
   if (shortStyleEl) shortStyleEl.textContent = track.shortStyle;
   if (lyricsEl) lyricsEl.textContent = track.lyrics;
   if (stylePromptEl) stylePromptEl.textContent = track.stylePrompt;
-  if (negTagsEl) negTagsEl.textContent = track.negativeTags || "Keine";
+  if (negTagsEl) negTagsEl.textContent = track.negativeTags || t("none");
   if (settingsGridEl) settingsGridEl.innerHTML = buildSettingsHtml(track);
   if (songLinkEl) songLinkEl.href = track.sunoUrl;
   if (urlTextEl) {
@@ -329,8 +330,8 @@ function updateJukeboxInspector(track, isPlaying) {
 
   if (mainPlayLabel) {
     mainPlayLabel.textContent = isPlaying
-      ? "Pausieren"
-      : "Jetzt in Jukebox abspielen";
+      ? t("pauseAction")
+      : t("playJukebox");
   }
 
   if (coverIconPlay && coverIconPause) {
@@ -364,7 +365,7 @@ function updateTrackCountsInDOM() {
   }
 
   const btnAll = document.querySelector('[data-lang-filter="ALL"]');
-  if (btnAll) btnAll.textContent = `Alle (${total})`;
+  if (btnAll) btnAll.textContent = `${t("all")} (${total})`;
   const btnDe = document.querySelector('[data-lang-filter="DE"]');
   if (btnDe) btnDe.textContent = `DE 🇩🇪 (${deCount})`;
   const btnEs = document.querySelector('[data-lang-filter="ES"]');
@@ -374,7 +375,7 @@ function updateTrackCountsInDOM() {
 
   const searchInput = document.getElementById("jukebox-search");
   if (searchInput) {
-    searchInput.placeholder = `Unter ${total} Songs nach Titel, Text, Style oder BPM suchen...`;
+    searchInput.placeholder = t("search", { count: total });
   }
 }
 
@@ -428,7 +429,7 @@ async function syncLiveTracksFromApi() {
 
       const badge = document.getElementById("jukebox-status-badge");
       if (badge) {
-        badge.textContent = `SUNO DIRECT STREAM • ${currentTracks.length} TRACKS LIVE SYNCED`;
+        badge.textContent = t("synced", { count: currentTracks.length });
         badge.style.borderColor = "var(--accent-cyan)";
         badge.style.color = "var(--accent-cyan)";
       }
@@ -582,8 +583,8 @@ function setupAudioUI() {
 
     if (studioAudioState) {
       studioAudioState.textContent = isPlaying
-        ? `NOW PLAYING: ${track.title} (${track.bpm} BPM)`
-        : `INSPEKTOR AKTIV: ${track.title}`;
+        ? t("nowPlaying", { title: track.title, bpm: track.bpm })
+        : t("inspectorActive", { title: track.title });
     }
 
     updateJukeboxInspector(track, isPlaying);
@@ -618,22 +619,17 @@ function setupScrollChoreography() {
 
   const uiFrame = document.getElementById("studio-ui-frame");
   const stagePill = document.getElementById("ui-stage-pill");
-  const stepCards = document.querySelectorAll(".scrolly-step-card");
+  const getStepCards = () => document.querySelectorAll(".scrolly-step-card");
   const sidebarItems = document.querySelectorAll("[data-stage-indicator]");
   const uiLayers = document.querySelectorAll("[data-ui-layer]");
 
-  const stageLabels = [
-    "STAGE 01 // CHATGPT LYRICS",
-    "STAGE 02 // CHATGPT STYLE",
-    "STAGE 03 // SUNO V6 SETTINGS"
-  ];
-
   function activateStudioStage(idx) {
-    stepCards.forEach((c, i) => c.classList.toggle("is-active", i === idx));
+    getStepCards().forEach((c, i) => c.classList.toggle("is-active", i === idx));
     sidebarItems.forEach((s, i) => s.classList.toggle("active", i === idx));
     uiLayers.forEach((l, i) => l.classList.toggle("active", i === idx));
     if (uiFrame) uiFrame.setAttribute("data-active-stage", String(idx));
-    if (stagePill && stageLabels[idx]) stagePill.textContent = stageLabels[idx];
+    const stageLabel = t(`stage${idx + 1}`);
+    if (stagePill && stageLabel) stagePill.textContent = stageLabel;
   }
 
   // Allow clicking sidebar items inside the Studio UI frame directly
@@ -656,7 +652,9 @@ function setupScrollChoreography() {
     { rootMargin: "-30% 0px -35% 0px", threshold: 0.1 }
   );
 
-  stepCards.forEach((card) => stepObserver.observe(card));
+  const observeStepCards = () => getStepCards().forEach((card) => stepObserver.observe(card));
+  observeStepCards();
+  window.addEventListener("v4nox:localechange", () => requestAnimationFrame(observeStepCards));
 
   const heroOrb = document.getElementById("hero-orb-container");
   const parallaxHudList = document.querySelectorAll("[data-parallax]");
@@ -870,6 +868,7 @@ function setupHeroLightning() {
    INITIALIZE APPLICATION
    ======================================================== */
 document.addEventListener("DOMContentLoaded", () => {
+  initI18n();
   renderWorkflowSteps();
   setupJukeboxAndStudioControls();
   setupAudioUI();
@@ -878,4 +877,15 @@ document.addEventListener("DOMContentLoaded", () => {
   setupHeroLightning();
   setupLegalModal();
   syncLiveTracksFromApi();
+
+  window.addEventListener("v4nox:localechange", () => {
+    renderWorkflowSteps();
+    renderJukeboxPlaylist();
+    updateTrackCountsInDOM();
+    const activeTrack = currentTracks[activeTrackIndex];
+    if (activeTrack) {
+      updateJukeboxInspector(activeTrack, audioEngine.isPlaying);
+      updateStudioInspector(activeTrack, audioEngine.isPlaying);
+    }
+  });
 });
